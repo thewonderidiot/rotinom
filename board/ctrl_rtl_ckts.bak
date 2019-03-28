@@ -1,0 +1,1721 @@
+EESchema Schematic File Version 4
+LIBS:rotinom-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L agc_monitor:MMBT2369 Q?
+U 1 1 5CA9AB82
+P 1650 1450
+AR Path="/5CA12007/5CA9AB82" Ref="Q?"  Part="1" 
+AR Path="/5CA99762/5CA9AB82" Ref="Q17"  Part="1" 
+F 0 "Q17" H 1841 1496 50  0000 L CNN
+F 1 "MMBT2369" H 1841 1405 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1850 1375 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 1650 1450 50  0001 L CNN
+	1    1650 1450
+	1    0    0    -1  
+$EndComp
+Text GLabel 1050 1450 0    50   Input ~ 0
+MNHSBF
+Wire Wire Line
+	1050 1450 1100 1450
+$Comp
+L Device:R_US R?
+U 1 1 5CA9AB8B
+P 1250 1450
+AR Path="/5CA12007/5CA9AB8B" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CA9AB8B" Ref="R33"  Part="1" 
+F 0 "R33" V 1045 1450 50  0000 C CNN
+F 1 "1.5k" V 1136 1450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1290 1440 50  0001 C CNN
+F 3 "~" H 1250 1450 50  0001 C CNN
+	1    1250 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 1450 1450 1450
+$Comp
+L power:GND #PWR?
+U 1 1 5CA9AB93
+P 1750 1700
+AR Path="/5CA12007/5CA9AB93" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CA9AB93" Ref="#PWR0139"  Part="1" 
+F 0 "#PWR0139" H 1750 1450 50  0001 C CNN
+F 1 "GND" H 1755 1527 50  0000 C CNN
+F 2 "" H 1750 1700 50  0001 C CNN
+F 3 "" H 1750 1700 50  0001 C CNN
+	1    1750 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1650 1750 1700
+$Comp
+L Device:R_US R?
+U 1 1 5CA9AB9A
+P 1750 1000
+AR Path="/5CA12007/5CA9AB9A" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CA9AB9A" Ref="R34"  Part="1" 
+F 0 "R34" H 1818 1046 50  0000 L CNN
+F 1 "3k" H 1818 955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1790 990 50  0001 C CNN
+F 3 "~" H 1750 1000 50  0001 C CNN
+	1    1750 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L agc_monitor:+3V3_FPGA #PWR?
+U 1 1 5CA9ABA1
+P 1750 800
+AR Path="/5CA12007/5CA9ABA1" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CA9ABA1" Ref="#PWR0140"  Part="1" 
+F 0 "#PWR0140" H 1750 650 50  0001 C CNN
+F 1 "+3V3_FPGA" H 1735 973 50  0000 C CNN
+F 2 "" H 1750 800 50  0001 C CNN
+F 3 "" H 1750 800 50  0001 C CNN
+	1    1750 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 800  1750 850 
+Wire Wire Line
+	1750 1150 1750 1200
+Wire Wire Line
+	1750 1200 1900 1200
+Connection ~ 1750 1200
+Wire Wire Line
+	1750 1200 1750 1250
+Text GLabel 1900 1200 2    50   Output ~ 0
+MNHSBF_n
+$Comp
+L agc_monitor:MMBT2369 Q?
+U 1 1 5CA9DA35
+P 3350 1450
+AR Path="/5CA12007/5CA9DA35" Ref="Q?"  Part="1" 
+AR Path="/5CA99762/5CA9DA35" Ref="Q18"  Part="1" 
+F 0 "Q18" H 3541 1496 50  0000 L CNN
+F 1 "MMBT2369" H 3541 1405 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3550 1375 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 3350 1450 50  0001 L CNN
+	1    3350 1450
+	1    0    0    -1  
+$EndComp
+Text GLabel 2750 1450 0    50   Input ~ 0
+MNHNC
+Wire Wire Line
+	2750 1450 2800 1450
+$Comp
+L Device:R_US R?
+U 1 1 5CA9DA3D
+P 2950 1450
+AR Path="/5CA12007/5CA9DA3D" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CA9DA3D" Ref="R35"  Part="1" 
+F 0 "R35" V 2745 1450 50  0000 C CNN
+F 1 "1.5k" V 2836 1450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2990 1440 50  0001 C CNN
+F 3 "~" H 2950 1450 50  0001 C CNN
+	1    2950 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 1450 3150 1450
+$Comp
+L power:GND #PWR?
+U 1 1 5CA9DA44
+P 3450 1700
+AR Path="/5CA12007/5CA9DA44" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CA9DA44" Ref="#PWR0141"  Part="1" 
+F 0 "#PWR0141" H 3450 1450 50  0001 C CNN
+F 1 "GND" H 3455 1527 50  0000 C CNN
+F 2 "" H 3450 1700 50  0001 C CNN
+F 3 "" H 3450 1700 50  0001 C CNN
+	1    3450 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 1650 3450 1700
+$Comp
+L Device:R_US R?
+U 1 1 5CA9DA4B
+P 3450 1000
+AR Path="/5CA12007/5CA9DA4B" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CA9DA4B" Ref="R36"  Part="1" 
+F 0 "R36" H 3518 1046 50  0000 L CNN
+F 1 "3k" H 3518 955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3490 990 50  0001 C CNN
+F 3 "~" H 3450 1000 50  0001 C CNN
+	1    3450 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L agc_monitor:+3V3_FPGA #PWR?
+U 1 1 5CA9DA51
+P 3450 800
+AR Path="/5CA12007/5CA9DA51" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CA9DA51" Ref="#PWR0142"  Part="1" 
+F 0 "#PWR0142" H 3450 650 50  0001 C CNN
+F 1 "+3V3_FPGA" H 3435 973 50  0000 C CNN
+F 2 "" H 3450 800 50  0001 C CNN
+F 3 "" H 3450 800 50  0001 C CNN
+	1    3450 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 800  3450 850 
+Wire Wire Line
+	3450 1150 3450 1200
+Wire Wire Line
+	3450 1200 3600 1200
+Connection ~ 3450 1200
+Wire Wire Line
+	3450 1200 3450 1250
+Text GLabel 3600 1200 2    50   Output ~ 0
+MNHNC_n
+$Comp
+L agc_monitor:MMBT2369 Q?
+U 1 1 5CA9FFC1
+P 5000 1500
+AR Path="/5CA12007/5CA9FFC1" Ref="Q?"  Part="1" 
+AR Path="/5CA99762/5CA9FFC1" Ref="Q19"  Part="1" 
+F 0 "Q19" H 5191 1546 50  0000 L CNN
+F 1 "MMBT2369" H 5191 1455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5200 1425 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 5000 1500 50  0001 L CNN
+	1    5000 1500
+	1    0    0    -1  
+$EndComp
+Text GLabel 4400 1500 0    50   Input ~ 0
+MNHRPT
+Wire Wire Line
+	4400 1500 4450 1500
+$Comp
+L Device:R_US R?
+U 1 1 5CA9FFC9
+P 4600 1500
+AR Path="/5CA12007/5CA9FFC9" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CA9FFC9" Ref="R37"  Part="1" 
+F 0 "R37" V 4395 1500 50  0000 C CNN
+F 1 "1.5k" V 4486 1500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4640 1490 50  0001 C CNN
+F 3 "~" H 4600 1500 50  0001 C CNN
+	1    4600 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 1500 4800 1500
+$Comp
+L power:GND #PWR?
+U 1 1 5CA9FFD0
+P 5100 1750
+AR Path="/5CA12007/5CA9FFD0" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CA9FFD0" Ref="#PWR0143"  Part="1" 
+F 0 "#PWR0143" H 5100 1500 50  0001 C CNN
+F 1 "GND" H 5105 1577 50  0000 C CNN
+F 2 "" H 5100 1750 50  0001 C CNN
+F 3 "" H 5100 1750 50  0001 C CNN
+	1    5100 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 1700 5100 1750
+$Comp
+L Device:R_US R?
+U 1 1 5CA9FFD7
+P 5100 1050
+AR Path="/5CA12007/5CA9FFD7" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CA9FFD7" Ref="R38"  Part="1" 
+F 0 "R38" H 5168 1096 50  0000 L CNN
+F 1 "3k" H 5168 1005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5140 1040 50  0001 C CNN
+F 3 "~" H 5100 1050 50  0001 C CNN
+	1    5100 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L agc_monitor:+3V3_FPGA #PWR?
+U 1 1 5CA9FFDD
+P 5100 850
+AR Path="/5CA12007/5CA9FFDD" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CA9FFDD" Ref="#PWR0144"  Part="1" 
+F 0 "#PWR0144" H 5100 700 50  0001 C CNN
+F 1 "+3V3_FPGA" H 5085 1023 50  0000 C CNN
+F 2 "" H 5100 850 50  0001 C CNN
+F 3 "" H 5100 850 50  0001 C CNN
+	1    5100 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 850  5100 900 
+Wire Wire Line
+	5100 1200 5100 1250
+Wire Wire Line
+	5100 1250 5250 1250
+Connection ~ 5100 1250
+Wire Wire Line
+	5100 1250 5100 1300
+Text GLabel 5250 1250 2    50   Output ~ 0
+MNHRPT_n
+$Comp
+L agc_monitor:MMBT2369 Q?
+U 1 1 5CAA1ED7
+P 6700 1500
+AR Path="/5CA12007/5CAA1ED7" Ref="Q?"  Part="1" 
+AR Path="/5CA99762/5CAA1ED7" Ref="Q20"  Part="1" 
+F 0 "Q20" H 6891 1546 50  0000 L CNN
+F 1 "MMBT2369" H 6891 1455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6900 1425 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 6700 1500 50  0001 L CNN
+	1    6700 1500
+	1    0    0    -1  
+$EndComp
+Text GLabel 6100 1500 0    50   Input ~ 0
+MTCSAI
+Wire Wire Line
+	6100 1500 6150 1500
+$Comp
+L Device:R_US R?
+U 1 1 5CAA1EDF
+P 6300 1500
+AR Path="/5CA12007/5CAA1EDF" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CAA1EDF" Ref="R39"  Part="1" 
+F 0 "R39" V 6095 1500 50  0000 C CNN
+F 1 "1.5k" V 6186 1500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6340 1490 50  0001 C CNN
+F 3 "~" H 6300 1500 50  0001 C CNN
+	1    6300 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6450 1500 6500 1500
+$Comp
+L power:GND #PWR?
+U 1 1 5CAA1EE6
+P 6800 1750
+AR Path="/5CA12007/5CAA1EE6" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAA1EE6" Ref="#PWR0145"  Part="1" 
+F 0 "#PWR0145" H 6800 1500 50  0001 C CNN
+F 1 "GND" H 6805 1577 50  0000 C CNN
+F 2 "" H 6800 1750 50  0001 C CNN
+F 3 "" H 6800 1750 50  0001 C CNN
+	1    6800 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 1700 6800 1750
+$Comp
+L Device:R_US R?
+U 1 1 5CAA1EED
+P 6800 1050
+AR Path="/5CA12007/5CAA1EED" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CAA1EED" Ref="R40"  Part="1" 
+F 0 "R40" H 6868 1096 50  0000 L CNN
+F 1 "3k" H 6868 1005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6840 1040 50  0001 C CNN
+F 3 "~" H 6800 1050 50  0001 C CNN
+	1    6800 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L agc_monitor:+3V3_FPGA #PWR?
+U 1 1 5CAA1EF3
+P 6800 850
+AR Path="/5CA12007/5CAA1EF3" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAA1EF3" Ref="#PWR0146"  Part="1" 
+F 0 "#PWR0146" H 6800 700 50  0001 C CNN
+F 1 "+3V3_FPGA" H 6785 1023 50  0000 C CNN
+F 2 "" H 6800 850 50  0001 C CNN
+F 3 "" H 6800 850 50  0001 C CNN
+	1    6800 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 850  6800 900 
+Wire Wire Line
+	6800 1200 6800 1250
+Wire Wire Line
+	6800 1250 6950 1250
+Connection ~ 6800 1250
+Wire Wire Line
+	6800 1250 6800 1300
+Text GLabel 6950 1250 2    50   Output ~ 0
+MTCSAI_n
+$Comp
+L agc_monitor:MMBT2369 Q?
+U 1 1 5CAA3C2A
+P 8350 1500
+AR Path="/5CA12007/5CAA3C2A" Ref="Q?"  Part="1" 
+AR Path="/5CA99762/5CAA3C2A" Ref="Q21"  Part="1" 
+F 0 "Q21" H 8541 1546 50  0000 L CNN
+F 1 "MMBT2369" H 8541 1455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8550 1425 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 8350 1500 50  0001 L CNN
+	1    8350 1500
+	1    0    0    -1  
+$EndComp
+Text GLabel 7750 1500 0    50   Input ~ 0
+MSTRT
+Wire Wire Line
+	7750 1500 7800 1500
+$Comp
+L Device:R_US R?
+U 1 1 5CAA3C32
+P 7950 1500
+AR Path="/5CA12007/5CAA3C32" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CAA3C32" Ref="R41"  Part="1" 
+F 0 "R41" V 7745 1500 50  0000 C CNN
+F 1 "1.5k" V 7836 1500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7990 1490 50  0001 C CNN
+F 3 "~" H 7950 1500 50  0001 C CNN
+	1    7950 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8100 1500 8150 1500
+$Comp
+L power:GND #PWR?
+U 1 1 5CAA3C39
+P 8450 1750
+AR Path="/5CA12007/5CAA3C39" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAA3C39" Ref="#PWR0147"  Part="1" 
+F 0 "#PWR0147" H 8450 1500 50  0001 C CNN
+F 1 "GND" H 8455 1577 50  0000 C CNN
+F 2 "" H 8450 1750 50  0001 C CNN
+F 3 "" H 8450 1750 50  0001 C CNN
+	1    8450 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 1700 8450 1750
+$Comp
+L Device:R_US R?
+U 1 1 5CAA3C40
+P 8450 1050
+AR Path="/5CA12007/5CAA3C40" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CAA3C40" Ref="R42"  Part="1" 
+F 0 "R42" H 8518 1096 50  0000 L CNN
+F 1 "3k" H 8518 1005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8490 1040 50  0001 C CNN
+F 3 "~" H 8450 1050 50  0001 C CNN
+	1    8450 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L agc_monitor:+3V3_FPGA #PWR?
+U 1 1 5CAA3C46
+P 8450 850
+AR Path="/5CA12007/5CAA3C46" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAA3C46" Ref="#PWR0148"  Part="1" 
+F 0 "#PWR0148" H 8450 700 50  0001 C CNN
+F 1 "+3V3_FPGA" H 8435 1023 50  0000 C CNN
+F 2 "" H 8450 850 50  0001 C CNN
+F 3 "" H 8450 850 50  0001 C CNN
+	1    8450 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 850  8450 900 
+Wire Wire Line
+	8450 1200 8450 1250
+Wire Wire Line
+	8450 1250 8600 1250
+Connection ~ 8450 1250
+Wire Wire Line
+	8450 1250 8450 1300
+Text GLabel 8600 1250 2    50   Output ~ 0
+MSTRT_n
+$Comp
+L agc_monitor:MMBT2369 Q?
+U 1 1 5CAA5E2E
+P 9950 1500
+AR Path="/5CA12007/5CAA5E2E" Ref="Q?"  Part="1" 
+AR Path="/5CA99762/5CAA5E2E" Ref="Q22"  Part="1" 
+F 0 "Q22" H 10141 1546 50  0000 L CNN
+F 1 "MMBT2369" H 10141 1455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10150 1425 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 9950 1500 50  0001 L CNN
+	1    9950 1500
+	1    0    0    -1  
+$EndComp
+Text GLabel 9350 1500 0    50   Input ~ 0
+MSTP
+Wire Wire Line
+	9350 1500 9400 1500
+$Comp
+L Device:R_US R?
+U 1 1 5CAA5E36
+P 9550 1500
+AR Path="/5CA12007/5CAA5E36" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CAA5E36" Ref="R43"  Part="1" 
+F 0 "R43" V 9345 1500 50  0000 C CNN
+F 1 "1.5k" V 9436 1500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9590 1490 50  0001 C CNN
+F 3 "~" H 9550 1500 50  0001 C CNN
+	1    9550 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9700 1500 9750 1500
+$Comp
+L power:GND #PWR?
+U 1 1 5CAA5E3D
+P 10050 1750
+AR Path="/5CA12007/5CAA5E3D" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAA5E3D" Ref="#PWR0149"  Part="1" 
+F 0 "#PWR0149" H 10050 1500 50  0001 C CNN
+F 1 "GND" H 10055 1577 50  0000 C CNN
+F 2 "" H 10050 1750 50  0001 C CNN
+F 3 "" H 10050 1750 50  0001 C CNN
+	1    10050 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 1700 10050 1750
+$Comp
+L Device:R_US R?
+U 1 1 5CAA5E44
+P 10050 1050
+AR Path="/5CA12007/5CAA5E44" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CAA5E44" Ref="R44"  Part="1" 
+F 0 "R44" H 10118 1096 50  0000 L CNN
+F 1 "3k" H 10118 1005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10090 1040 50  0001 C CNN
+F 3 "~" H 10050 1050 50  0001 C CNN
+	1    10050 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L agc_monitor:+3V3_FPGA #PWR?
+U 1 1 5CAA5E4A
+P 10050 850
+AR Path="/5CA12007/5CAA5E4A" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAA5E4A" Ref="#PWR0150"  Part="1" 
+F 0 "#PWR0150" H 10050 700 50  0001 C CNN
+F 1 "+3V3_FPGA" H 10035 1023 50  0000 C CNN
+F 2 "" H 10050 850 50  0001 C CNN
+F 3 "" H 10050 850 50  0001 C CNN
+	1    10050 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 850  10050 900 
+Wire Wire Line
+	10050 1200 10050 1250
+Wire Wire Line
+	10050 1250 10200 1250
+Connection ~ 10050 1250
+Wire Wire Line
+	10050 1250 10050 1300
+Text GLabel 10200 1250 2    50   Output ~ 0
+MSTP_n
+$Comp
+L agc_monitor:MMBT2369 Q?
+U 1 1 5CAAACF4
+P 1650 2950
+AR Path="/5CA12007/5CAAACF4" Ref="Q?"  Part="1" 
+AR Path="/5CA99762/5CAAACF4" Ref="Q23"  Part="1" 
+F 0 "Q23" H 1841 2996 50  0000 L CNN
+F 1 "MMBT2369" H 1841 2905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1850 2875 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 1650 2950 50  0001 L CNN
+	1    1650 2950
+	1    0    0    -1  
+$EndComp
+Text GLabel 1050 2950 0    50   Input ~ 0
+MSTBSTP
+Wire Wire Line
+	1050 2950 1100 2950
+$Comp
+L Device:R_US R?
+U 1 1 5CAAACFC
+P 1250 2950
+AR Path="/5CA12007/5CAAACFC" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CAAACFC" Ref="R45"  Part="1" 
+F 0 "R45" V 1045 2950 50  0000 C CNN
+F 1 "1.5k" V 1136 2950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1290 2940 50  0001 C CNN
+F 3 "~" H 1250 2950 50  0001 C CNN
+	1    1250 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 2950 1450 2950
+$Comp
+L power:GND #PWR?
+U 1 1 5CAAAD03
+P 1750 3200
+AR Path="/5CA12007/5CAAAD03" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAAAD03" Ref="#PWR0151"  Part="1" 
+F 0 "#PWR0151" H 1750 2950 50  0001 C CNN
+F 1 "GND" H 1755 3027 50  0000 C CNN
+F 2 "" H 1750 3200 50  0001 C CNN
+F 3 "" H 1750 3200 50  0001 C CNN
+	1    1750 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 3150 1750 3200
+$Comp
+L Device:R_US R?
+U 1 1 5CAAAD0A
+P 1750 2500
+AR Path="/5CA12007/5CAAAD0A" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CAAAD0A" Ref="R46"  Part="1" 
+F 0 "R46" H 1818 2546 50  0000 L CNN
+F 1 "3k" H 1818 2455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1790 2490 50  0001 C CNN
+F 3 "~" H 1750 2500 50  0001 C CNN
+	1    1750 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L agc_monitor:+3V3_FPGA #PWR?
+U 1 1 5CAAAD10
+P 1750 2300
+AR Path="/5CA12007/5CAAAD10" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAAAD10" Ref="#PWR0152"  Part="1" 
+F 0 "#PWR0152" H 1750 2150 50  0001 C CNN
+F 1 "+3V3_FPGA" H 1735 2473 50  0000 C CNN
+F 2 "" H 1750 2300 50  0001 C CNN
+F 3 "" H 1750 2300 50  0001 C CNN
+	1    1750 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2300 1750 2350
+Wire Wire Line
+	1750 2650 1750 2700
+Wire Wire Line
+	1750 2700 1900 2700
+Connection ~ 1750 2700
+Wire Wire Line
+	1750 2700 1750 2750
+Text GLabel 1900 2700 2    50   Output ~ 0
+MSBSTP_n
+$Comp
+L agc_monitor:MMBT2369 Q?
+U 1 1 5CAAAD1C
+P 3350 2950
+AR Path="/5CA12007/5CAAAD1C" Ref="Q?"  Part="1" 
+AR Path="/5CA99762/5CAAAD1C" Ref="Q24"  Part="1" 
+F 0 "Q24" H 3541 2996 50  0000 L CNN
+F 1 "MMBT2369" H 3541 2905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3550 2875 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 3350 2950 50  0001 L CNN
+	1    3350 2950
+	1    0    0    -1  
+$EndComp
+Text GLabel 2750 2950 0    50   Input ~ 0
+MRDCH
+Wire Wire Line
+	2750 2950 2800 2950
+$Comp
+L Device:R_US R?
+U 1 1 5CAAAD24
+P 2950 2950
+AR Path="/5CA12007/5CAAAD24" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CAAAD24" Ref="R47"  Part="1" 
+F 0 "R47" V 2745 2950 50  0000 C CNN
+F 1 "1.5k" V 2836 2950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2990 2940 50  0001 C CNN
+F 3 "~" H 2950 2950 50  0001 C CNN
+	1    2950 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 2950 3150 2950
+$Comp
+L power:GND #PWR?
+U 1 1 5CAAAD2B
+P 3450 3200
+AR Path="/5CA12007/5CAAAD2B" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAAAD2B" Ref="#PWR0153"  Part="1" 
+F 0 "#PWR0153" H 3450 2950 50  0001 C CNN
+F 1 "GND" H 3455 3027 50  0000 C CNN
+F 2 "" H 3450 3200 50  0001 C CNN
+F 3 "" H 3450 3200 50  0001 C CNN
+	1    3450 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3150 3450 3200
+$Comp
+L Device:R_US R?
+U 1 1 5CAAAD32
+P 3450 2500
+AR Path="/5CA12007/5CAAAD32" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CAAAD32" Ref="R48"  Part="1" 
+F 0 "R48" H 3518 2546 50  0000 L CNN
+F 1 "3k" H 3518 2455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3490 2490 50  0001 C CNN
+F 3 "~" H 3450 2500 50  0001 C CNN
+	1    3450 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L agc_monitor:+3V3_FPGA #PWR?
+U 1 1 5CAAAD38
+P 3450 2300
+AR Path="/5CA12007/5CAAAD38" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAAAD38" Ref="#PWR0154"  Part="1" 
+F 0 "#PWR0154" H 3450 2150 50  0001 C CNN
+F 1 "+3V3_FPGA" H 3435 2473 50  0000 C CNN
+F 2 "" H 3450 2300 50  0001 C CNN
+F 3 "" H 3450 2300 50  0001 C CNN
+	1    3450 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 2300 3450 2350
+Wire Wire Line
+	3450 2650 3450 2700
+Wire Wire Line
+	3450 2700 3600 2700
+Connection ~ 3450 2700
+Wire Wire Line
+	3450 2700 3450 2750
+Text GLabel 3600 2700 2    50   Output ~ 0
+MRDCH_n
+$Comp
+L agc_monitor:MMBT2369 Q?
+U 1 1 5CAAAD44
+P 5000 3000
+AR Path="/5CA12007/5CAAAD44" Ref="Q?"  Part="1" 
+AR Path="/5CA99762/5CAAAD44" Ref="Q25"  Part="1" 
+F 0 "Q25" H 5191 3046 50  0000 L CNN
+F 1 "MMBT2369" H 5191 2955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5200 2925 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 5000 3000 50  0001 L CNN
+	1    5000 3000
+	1    0    0    -1  
+$EndComp
+Text GLabel 4400 3000 0    50   Input ~ 0
+MLDCH
+Wire Wire Line
+	4400 3000 4450 3000
+$Comp
+L Device:R_US R?
+U 1 1 5CAAAD4C
+P 4600 3000
+AR Path="/5CA12007/5CAAAD4C" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CAAAD4C" Ref="R49"  Part="1" 
+F 0 "R49" V 4395 3000 50  0000 C CNN
+F 1 "1.5k" V 4486 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4640 2990 50  0001 C CNN
+F 3 "~" H 4600 3000 50  0001 C CNN
+	1    4600 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 3000 4800 3000
+$Comp
+L power:GND #PWR?
+U 1 1 5CAAAD53
+P 5100 3250
+AR Path="/5CA12007/5CAAAD53" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAAAD53" Ref="#PWR0155"  Part="1" 
+F 0 "#PWR0155" H 5100 3000 50  0001 C CNN
+F 1 "GND" H 5105 3077 50  0000 C CNN
+F 2 "" H 5100 3250 50  0001 C CNN
+F 3 "" H 5100 3250 50  0001 C CNN
+	1    5100 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3200 5100 3250
+$Comp
+L Device:R_US R?
+U 1 1 5CAAAD5A
+P 5100 2550
+AR Path="/5CA12007/5CAAAD5A" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CAAAD5A" Ref="R50"  Part="1" 
+F 0 "R50" H 5168 2596 50  0000 L CNN
+F 1 "3k" H 5168 2505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5140 2540 50  0001 C CNN
+F 3 "~" H 5100 2550 50  0001 C CNN
+	1    5100 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L agc_monitor:+3V3_FPGA #PWR?
+U 1 1 5CAAAD60
+P 5100 2350
+AR Path="/5CA12007/5CAAAD60" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAAAD60" Ref="#PWR0156"  Part="1" 
+F 0 "#PWR0156" H 5100 2200 50  0001 C CNN
+F 1 "+3V3_FPGA" H 5085 2523 50  0000 C CNN
+F 2 "" H 5100 2350 50  0001 C CNN
+F 3 "" H 5100 2350 50  0001 C CNN
+	1    5100 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 2350 5100 2400
+Wire Wire Line
+	5100 2700 5100 2750
+Wire Wire Line
+	5100 2750 5250 2750
+Connection ~ 5100 2750
+Wire Wire Line
+	5100 2750 5100 2800
+Text GLabel 5250 2750 2    50   Output ~ 0
+MLDCH_n
+$Comp
+L agc_monitor:MMBT2369 Q?
+U 1 1 5CAAAD6C
+P 6700 3000
+AR Path="/5CA12007/5CAAAD6C" Ref="Q?"  Part="1" 
+AR Path="/5CA99762/5CAAAD6C" Ref="Q26"  Part="1" 
+F 0 "Q26" H 6891 3046 50  0000 L CNN
+F 1 "MMBT2369" H 6891 2955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6900 2925 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 6700 3000 50  0001 L CNN
+	1    6700 3000
+	1    0    0    -1  
+$EndComp
+Text GLabel 6100 3000 0    50   Input ~ 0
+MONPAR
+Wire Wire Line
+	6100 3000 6150 3000
+$Comp
+L Device:R_US R?
+U 1 1 5CAAAD74
+P 6300 3000
+AR Path="/5CA12007/5CAAAD74" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CAAAD74" Ref="R51"  Part="1" 
+F 0 "R51" V 6095 3000 50  0000 C CNN
+F 1 "1.5k" V 6186 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6340 2990 50  0001 C CNN
+F 3 "~" H 6300 3000 50  0001 C CNN
+	1    6300 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6450 3000 6500 3000
+$Comp
+L power:GND #PWR?
+U 1 1 5CAAAD7B
+P 6800 3250
+AR Path="/5CA12007/5CAAAD7B" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAAAD7B" Ref="#PWR0157"  Part="1" 
+F 0 "#PWR0157" H 6800 3000 50  0001 C CNN
+F 1 "GND" H 6805 3077 50  0000 C CNN
+F 2 "" H 6800 3250 50  0001 C CNN
+F 3 "" H 6800 3250 50  0001 C CNN
+	1    6800 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3200 6800 3250
+$Comp
+L Device:R_US R?
+U 1 1 5CAAAD82
+P 6800 2550
+AR Path="/5CA12007/5CAAAD82" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CAAAD82" Ref="R52"  Part="1" 
+F 0 "R52" H 6868 2596 50  0000 L CNN
+F 1 "3k" H 6868 2505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6840 2540 50  0001 C CNN
+F 3 "~" H 6800 2550 50  0001 C CNN
+	1    6800 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L agc_monitor:+3V3_FPGA #PWR?
+U 1 1 5CAAAD88
+P 6800 2350
+AR Path="/5CA12007/5CAAAD88" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAAAD88" Ref="#PWR0158"  Part="1" 
+F 0 "#PWR0158" H 6800 2200 50  0001 C CNN
+F 1 "+3V3_FPGA" H 6785 2523 50  0000 C CNN
+F 2 "" H 6800 2350 50  0001 C CNN
+F 3 "" H 6800 2350 50  0001 C CNN
+	1    6800 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 2350 6800 2400
+Wire Wire Line
+	6800 2700 6800 2750
+Wire Wire Line
+	6800 2750 6950 2750
+Connection ~ 6800 2750
+Wire Wire Line
+	6800 2750 6800 2800
+Text GLabel 6950 2750 2    50   Output ~ 0
+MONPAR_n
+$Comp
+L agc_monitor:MMBT2369 Q?
+U 1 1 5CAAAD94
+P 8350 3000
+AR Path="/5CA12007/5CAAAD94" Ref="Q?"  Part="1" 
+AR Path="/5CA99762/5CAAAD94" Ref="Q27"  Part="1" 
+F 0 "Q27" H 8541 3046 50  0000 L CNN
+F 1 "MMBT2369" H 8541 2955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8550 2925 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 8350 3000 50  0001 L CNN
+	1    8350 3000
+	1    0    0    -1  
+$EndComp
+Text GLabel 7750 3000 0    50   Input ~ 0
+MONWBK
+Wire Wire Line
+	7750 3000 7800 3000
+$Comp
+L Device:R_US R?
+U 1 1 5CAAAD9C
+P 7950 3000
+AR Path="/5CA12007/5CAAAD9C" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CAAAD9C" Ref="R53"  Part="1" 
+F 0 "R53" V 7745 3000 50  0000 C CNN
+F 1 "1.5k" V 7836 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7990 2990 50  0001 C CNN
+F 3 "~" H 7950 3000 50  0001 C CNN
+	1    7950 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8100 3000 8150 3000
+$Comp
+L power:GND #PWR?
+U 1 1 5CAAADA3
+P 8450 3250
+AR Path="/5CA12007/5CAAADA3" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAAADA3" Ref="#PWR0159"  Part="1" 
+F 0 "#PWR0159" H 8450 3000 50  0001 C CNN
+F 1 "GND" H 8455 3077 50  0000 C CNN
+F 2 "" H 8450 3250 50  0001 C CNN
+F 3 "" H 8450 3250 50  0001 C CNN
+	1    8450 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 3200 8450 3250
+$Comp
+L Device:R_US R?
+U 1 1 5CAAADAA
+P 8450 2550
+AR Path="/5CA12007/5CAAADAA" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CAAADAA" Ref="R54"  Part="1" 
+F 0 "R54" H 8518 2596 50  0000 L CNN
+F 1 "3k" H 8518 2505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8490 2540 50  0001 C CNN
+F 3 "~" H 8450 2550 50  0001 C CNN
+	1    8450 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L agc_monitor:+3V3_FPGA #PWR?
+U 1 1 5CAAADB0
+P 8450 2350
+AR Path="/5CA12007/5CAAADB0" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAAADB0" Ref="#PWR0160"  Part="1" 
+F 0 "#PWR0160" H 8450 2200 50  0001 C CNN
+F 1 "+3V3_FPGA" H 8435 2523 50  0000 C CNN
+F 2 "" H 8450 2350 50  0001 C CNN
+F 3 "" H 8450 2350 50  0001 C CNN
+	1    8450 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 2350 8450 2400
+Wire Wire Line
+	8450 2700 8450 2750
+Wire Wire Line
+	8450 2750 8600 2750
+Connection ~ 8450 2750
+Wire Wire Line
+	8450 2750 8450 2800
+Text GLabel 8600 2750 2    50   Output ~ 0
+MONWBK_n
+$Comp
+L agc_monitor:MMBT2369 Q?
+U 1 1 5CAAADBC
+P 9950 3000
+AR Path="/5CA12007/5CAAADBC" Ref="Q?"  Part="1" 
+AR Path="/5CA99762/5CAAADBC" Ref="Q28"  Part="1" 
+F 0 "Q28" H 10141 3046 50  0000 L CNN
+F 1 "MMBT2369" H 10141 2955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10150 2925 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 9950 3000 50  0001 L CNN
+	1    9950 3000
+	1    0    0    -1  
+$EndComp
+Text GLabel 9350 3000 0    50   Input ~ 0
+MLOAD
+Wire Wire Line
+	9350 3000 9400 3000
+$Comp
+L Device:R_US R?
+U 1 1 5CAAADC4
+P 9550 3000
+AR Path="/5CA12007/5CAAADC4" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CAAADC4" Ref="R55"  Part="1" 
+F 0 "R55" V 9345 3000 50  0000 C CNN
+F 1 "1.5k" V 9436 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9590 2990 50  0001 C CNN
+F 3 "~" H 9550 3000 50  0001 C CNN
+	1    9550 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9700 3000 9750 3000
+$Comp
+L power:GND #PWR?
+U 1 1 5CAAADCB
+P 10050 3250
+AR Path="/5CA12007/5CAAADCB" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAAADCB" Ref="#PWR0161"  Part="1" 
+F 0 "#PWR0161" H 10050 3000 50  0001 C CNN
+F 1 "GND" H 10055 3077 50  0000 C CNN
+F 2 "" H 10050 3250 50  0001 C CNN
+F 3 "" H 10050 3250 50  0001 C CNN
+	1    10050 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 3200 10050 3250
+$Comp
+L Device:R_US R?
+U 1 1 5CAAADD2
+P 10050 2550
+AR Path="/5CA12007/5CAAADD2" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CAAADD2" Ref="R56"  Part="1" 
+F 0 "R56" H 10118 2596 50  0000 L CNN
+F 1 "3k" H 10118 2505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10090 2540 50  0001 C CNN
+F 3 "~" H 10050 2550 50  0001 C CNN
+	1    10050 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L agc_monitor:+3V3_FPGA #PWR?
+U 1 1 5CAAADD8
+P 10050 2350
+AR Path="/5CA12007/5CAAADD8" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAAADD8" Ref="#PWR0162"  Part="1" 
+F 0 "#PWR0162" H 10050 2200 50  0001 C CNN
+F 1 "+3V3_FPGA" H 10035 2523 50  0000 C CNN
+F 2 "" H 10050 2350 50  0001 C CNN
+F 3 "" H 10050 2350 50  0001 C CNN
+	1    10050 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 2350 10050 2400
+Wire Wire Line
+	10050 2700 10050 2750
+Wire Wire Line
+	10050 2750 10200 2750
+Connection ~ 10050 2750
+Wire Wire Line
+	10050 2750 10050 2800
+Text GLabel 10200 2750 2    50   Output ~ 0
+MLOAD_n
+$Comp
+L agc_monitor:MMBT2369 Q?
+U 1 1 5CAC14DD
+P 1650 4450
+AR Path="/5CA12007/5CAC14DD" Ref="Q?"  Part="1" 
+AR Path="/5CA99762/5CAC14DD" Ref="Q29"  Part="1" 
+F 0 "Q29" H 1841 4496 50  0000 L CNN
+F 1 "MMBT2369" H 1841 4405 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1850 4375 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 1650 4450 50  0001 L CNN
+	1    1650 4450
+	1    0    0    -1  
+$EndComp
+Text GLabel 1050 4450 0    50   Input ~ 0
+MREAD
+Wire Wire Line
+	1050 4450 1100 4450
+$Comp
+L Device:R_US R?
+U 1 1 5CAC14E5
+P 1250 4450
+AR Path="/5CA12007/5CAC14E5" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CAC14E5" Ref="R57"  Part="1" 
+F 0 "R57" V 1045 4450 50  0000 C CNN
+F 1 "1.5k" V 1136 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1290 4440 50  0001 C CNN
+F 3 "~" H 1250 4450 50  0001 C CNN
+	1    1250 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 4450 1450 4450
+$Comp
+L power:GND #PWR?
+U 1 1 5CAC14EC
+P 1750 4700
+AR Path="/5CA12007/5CAC14EC" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAC14EC" Ref="#PWR0163"  Part="1" 
+F 0 "#PWR0163" H 1750 4450 50  0001 C CNN
+F 1 "GND" H 1755 4527 50  0000 C CNN
+F 2 "" H 1750 4700 50  0001 C CNN
+F 3 "" H 1750 4700 50  0001 C CNN
+	1    1750 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 4650 1750 4700
+$Comp
+L Device:R_US R?
+U 1 1 5CAC14F3
+P 1750 4000
+AR Path="/5CA12007/5CAC14F3" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CAC14F3" Ref="R58"  Part="1" 
+F 0 "R58" H 1818 4046 50  0000 L CNN
+F 1 "3k" H 1818 3955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1790 3990 50  0001 C CNN
+F 3 "~" H 1750 4000 50  0001 C CNN
+	1    1750 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L agc_monitor:+3V3_FPGA #PWR?
+U 1 1 5CAC14F9
+P 1750 3800
+AR Path="/5CA12007/5CAC14F9" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAC14F9" Ref="#PWR0164"  Part="1" 
+F 0 "#PWR0164" H 1750 3650 50  0001 C CNN
+F 1 "+3V3_FPGA" H 1735 3973 50  0000 C CNN
+F 2 "" H 1750 3800 50  0001 C CNN
+F 3 "" H 1750 3800 50  0001 C CNN
+	1    1750 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 3800 1750 3850
+Wire Wire Line
+	1750 4150 1750 4200
+Wire Wire Line
+	1750 4200 1900 4200
+Connection ~ 1750 4200
+Wire Wire Line
+	1750 4200 1750 4250
+Text GLabel 1900 4200 2    50   Output ~ 0
+MREAD_n
+$Comp
+L agc_monitor:MMBT2369 Q?
+U 1 1 5CAC1505
+P 3350 4450
+AR Path="/5CA12007/5CAC1505" Ref="Q?"  Part="1" 
+AR Path="/5CA99762/5CAC1505" Ref="Q30"  Part="1" 
+F 0 "Q30" H 3541 4496 50  0000 L CNN
+F 1 "MMBT2369" H 3541 4405 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3550 4375 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 3350 4450 50  0001 L CNN
+	1    3350 4450
+	1    0    0    -1  
+$EndComp
+Text GLabel 2750 4450 0    50   Input ~ 0
+NHALGA
+Wire Wire Line
+	2750 4450 2800 4450
+$Comp
+L Device:R_US R?
+U 1 1 5CAC150D
+P 2950 4450
+AR Path="/5CA12007/5CAC150D" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CAC150D" Ref="R59"  Part="1" 
+F 0 "R59" V 2745 4450 50  0000 C CNN
+F 1 "1.5k" V 2836 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2990 4440 50  0001 C CNN
+F 3 "~" H 2950 4450 50  0001 C CNN
+	1    2950 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 4450 3150 4450
+$Comp
+L power:GND #PWR?
+U 1 1 5CAC1514
+P 3450 4700
+AR Path="/5CA12007/5CAC1514" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAC1514" Ref="#PWR0165"  Part="1" 
+F 0 "#PWR0165" H 3450 4450 50  0001 C CNN
+F 1 "GND" H 3455 4527 50  0000 C CNN
+F 2 "" H 3450 4700 50  0001 C CNN
+F 3 "" H 3450 4700 50  0001 C CNN
+	1    3450 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 4650 3450 4700
+$Comp
+L Device:R_US R?
+U 1 1 5CAC151B
+P 3450 4000
+AR Path="/5CA12007/5CAC151B" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CAC151B" Ref="R60"  Part="1" 
+F 0 "R60" H 3518 4046 50  0000 L CNN
+F 1 "3k" H 3518 3955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3490 3990 50  0001 C CNN
+F 3 "~" H 3450 4000 50  0001 C CNN
+	1    3450 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L agc_monitor:+3V3_FPGA #PWR?
+U 1 1 5CAC1521
+P 3450 3800
+AR Path="/5CA12007/5CAC1521" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAC1521" Ref="#PWR0166"  Part="1" 
+F 0 "#PWR0166" H 3450 3650 50  0001 C CNN
+F 1 "+3V3_FPGA" H 3435 3973 50  0000 C CNN
+F 2 "" H 3450 3800 50  0001 C CNN
+F 3 "" H 3450 3800 50  0001 C CNN
+	1    3450 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3800 3450 3850
+Wire Wire Line
+	3450 4150 3450 4200
+Wire Wire Line
+	3450 4200 3600 4200
+Connection ~ 3450 4200
+Wire Wire Line
+	3450 4200 3450 4250
+Text GLabel 3600 4200 2    50   Output ~ 0
+NHALGA_n
+$Comp
+L agc_monitor:MMBT2369 Q?
+U 1 1 5CAC152D
+P 5000 4500
+AR Path="/5CA12007/5CAC152D" Ref="Q?"  Part="1" 
+AR Path="/5CA99762/5CAC152D" Ref="Q31"  Part="1" 
+F 0 "Q31" H 5191 4546 50  0000 L CNN
+F 1 "MMBT2369" H 5191 4455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5200 4425 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 5000 4500 50  0001 L CNN
+	1    5000 4500
+	1    0    0    -1  
+$EndComp
+Text GLabel 4400 4500 0    50   Input ~ 0
+DOSCAL
+Wire Wire Line
+	4400 4500 4450 4500
+$Comp
+L Device:R_US R?
+U 1 1 5CAC1535
+P 4600 4500
+AR Path="/5CA12007/5CAC1535" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CAC1535" Ref="R61"  Part="1" 
+F 0 "R61" V 4395 4500 50  0000 C CNN
+F 1 "1.5k" V 4486 4500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4640 4490 50  0001 C CNN
+F 3 "~" H 4600 4500 50  0001 C CNN
+	1    4600 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 4500 4800 4500
+$Comp
+L power:GND #PWR?
+U 1 1 5CAC153C
+P 5100 4750
+AR Path="/5CA12007/5CAC153C" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAC153C" Ref="#PWR0167"  Part="1" 
+F 0 "#PWR0167" H 5100 4500 50  0001 C CNN
+F 1 "GND" H 5105 4577 50  0000 C CNN
+F 2 "" H 5100 4750 50  0001 C CNN
+F 3 "" H 5100 4750 50  0001 C CNN
+	1    5100 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4700 5100 4750
+$Comp
+L Device:R_US R?
+U 1 1 5CAC1543
+P 5100 4050
+AR Path="/5CA12007/5CAC1543" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CAC1543" Ref="R62"  Part="1" 
+F 0 "R62" H 5168 4096 50  0000 L CNN
+F 1 "3k" H 5168 4005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5140 4040 50  0001 C CNN
+F 3 "~" H 5100 4050 50  0001 C CNN
+	1    5100 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L agc_monitor:+3V3_FPGA #PWR?
+U 1 1 5CAC1549
+P 5100 3850
+AR Path="/5CA12007/5CAC1549" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAC1549" Ref="#PWR0168"  Part="1" 
+F 0 "#PWR0168" H 5100 3700 50  0001 C CNN
+F 1 "+3V3_FPGA" H 5085 4023 50  0000 C CNN
+F 2 "" H 5100 3850 50  0001 C CNN
+F 3 "" H 5100 3850 50  0001 C CNN
+	1    5100 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3850 5100 3900
+Wire Wire Line
+	5100 4200 5100 4250
+Wire Wire Line
+	5100 4250 5250 4250
+Connection ~ 5100 4250
+Wire Wire Line
+	5100 4250 5100 4300
+Text GLabel 5250 4250 2    50   Output ~ 0
+DOSCAL_n
+$Comp
+L agc_monitor:MMBT2369 Q?
+U 1 1 5CAC1555
+P 6700 4500
+AR Path="/5CA12007/5CAC1555" Ref="Q?"  Part="1" 
+AR Path="/5CA99762/5CAC1555" Ref="Q32"  Part="1" 
+F 0 "Q32" H 6891 4546 50  0000 L CNN
+F 1 "MMBT2369" H 6891 4455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6900 4425 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 6700 4500 50  0001 L CNN
+	1    6700 4500
+	1    0    0    -1  
+$EndComp
+Text GLabel 6100 4500 0    50   Input ~ 0
+DBLTST
+Wire Wire Line
+	6100 4500 6150 4500
+$Comp
+L Device:R_US R?
+U 1 1 5CAC155D
+P 6300 4500
+AR Path="/5CA12007/5CAC155D" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CAC155D" Ref="R63"  Part="1" 
+F 0 "R63" V 6095 4500 50  0000 C CNN
+F 1 "1.5k" V 6186 4500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6340 4490 50  0001 C CNN
+F 3 "~" H 6300 4500 50  0001 C CNN
+	1    6300 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6450 4500 6500 4500
+$Comp
+L power:GND #PWR?
+U 1 1 5CAC1564
+P 6800 4750
+AR Path="/5CA12007/5CAC1564" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAC1564" Ref="#PWR0169"  Part="1" 
+F 0 "#PWR0169" H 6800 4500 50  0001 C CNN
+F 1 "GND" H 6805 4577 50  0000 C CNN
+F 2 "" H 6800 4750 50  0001 C CNN
+F 3 "" H 6800 4750 50  0001 C CNN
+	1    6800 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 4700 6800 4750
+$Comp
+L Device:R_US R?
+U 1 1 5CAC156B
+P 6800 4050
+AR Path="/5CA12007/5CAC156B" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CAC156B" Ref="R64"  Part="1" 
+F 0 "R64" H 6868 4096 50  0000 L CNN
+F 1 "3k" H 6868 4005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6840 4040 50  0001 C CNN
+F 3 "~" H 6800 4050 50  0001 C CNN
+	1    6800 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L agc_monitor:+3V3_FPGA #PWR?
+U 1 1 5CAC1571
+P 6800 3850
+AR Path="/5CA12007/5CAC1571" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAC1571" Ref="#PWR0170"  Part="1" 
+F 0 "#PWR0170" H 6800 3700 50  0001 C CNN
+F 1 "+3V3_FPGA" H 6785 4023 50  0000 C CNN
+F 2 "" H 6800 3850 50  0001 C CNN
+F 3 "" H 6800 3850 50  0001 C CNN
+	1    6800 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3850 6800 3900
+Wire Wire Line
+	6800 4200 6800 4250
+Wire Wire Line
+	6800 4250 6950 4250
+Connection ~ 6800 4250
+Wire Wire Line
+	6800 4250 6800 4300
+Text GLabel 6950 4250 2    50   Output ~ 0
+DBLTST_n
+$Comp
+L agc_monitor:MMBT2369 Q?
+U 1 1 5CAC157D
+P 8350 4500
+AR Path="/5CA12007/5CAC157D" Ref="Q?"  Part="1" 
+AR Path="/5CA99762/5CAC157D" Ref="Q33"  Part="1" 
+F 0 "Q33" H 8541 4546 50  0000 L CNN
+F 1 "MMBT2369" H 8541 4455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8550 4425 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 8350 4500 50  0001 L CNN
+	1    8350 4500
+	1    0    0    -1  
+$EndComp
+Text GLabel 7750 4500 0    50   Input ~ 0
+MAMU
+Wire Wire Line
+	7750 4500 7800 4500
+$Comp
+L Device:R_US R?
+U 1 1 5CAC1585
+P 7950 4500
+AR Path="/5CA12007/5CAC1585" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CAC1585" Ref="R65"  Part="1" 
+F 0 "R65" V 7745 4500 50  0000 C CNN
+F 1 "1.5k" V 7836 4500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7990 4490 50  0001 C CNN
+F 3 "~" H 7950 4500 50  0001 C CNN
+	1    7950 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8100 4500 8150 4500
+$Comp
+L power:GND #PWR?
+U 1 1 5CAC158C
+P 8450 4750
+AR Path="/5CA12007/5CAC158C" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAC158C" Ref="#PWR0171"  Part="1" 
+F 0 "#PWR0171" H 8450 4500 50  0001 C CNN
+F 1 "GND" H 8455 4577 50  0000 C CNN
+F 2 "" H 8450 4750 50  0001 C CNN
+F 3 "" H 8450 4750 50  0001 C CNN
+	1    8450 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 4700 8450 4750
+$Comp
+L Device:R_US R?
+U 1 1 5CAC1593
+P 8450 4050
+AR Path="/5CA12007/5CAC1593" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CAC1593" Ref="R66"  Part="1" 
+F 0 "R66" H 8518 4096 50  0000 L CNN
+F 1 "3k" H 8518 4005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8490 4040 50  0001 C CNN
+F 3 "~" H 8450 4050 50  0001 C CNN
+	1    8450 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L agc_monitor:+3V3_FPGA #PWR?
+U 1 1 5CAC1599
+P 8450 3850
+AR Path="/5CA12007/5CAC1599" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAC1599" Ref="#PWR0172"  Part="1" 
+F 0 "#PWR0172" H 8450 3700 50  0001 C CNN
+F 1 "+3V3_FPGA" H 8435 4023 50  0000 C CNN
+F 2 "" H 8450 3850 50  0001 C CNN
+F 3 "" H 8450 3850 50  0001 C CNN
+	1    8450 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 3850 8450 3900
+Wire Wire Line
+	8450 4200 8450 4250
+Wire Wire Line
+	8450 4250 8600 4250
+Connection ~ 8450 4250
+Wire Wire Line
+	8450 4250 8450 4300
+Text GLabel 8600 4250 2    50   Output ~ 0
+MAMU_n
+Text GLabel 4400 5950 0    50   Output ~ 0
+SIGNY
+Text GLabel 5150 5950 0    50   BiDi ~ 0
+ALGA
+$Comp
+L power:GND #PWR?
+U 1 1 5CAD7D0B
+P 1750 6350
+AR Path="/5C9CEEB8/5CAD7D0B" Ref="#PWR?"  Part="1" 
+AR Path="/5CA12007/5CAD7D0B" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAD7D0B" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0104" H 1750 6100 50  0001 C CNN
+F 1 "GND" H 1755 6177 50  0000 C CNN
+F 2 "" H 1750 6350 50  0001 C CNN
+F 3 "" H 1750 6350 50  0001 C CNN
+	1    1750 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 6250 1750 6350
+Wire Wire Line
+	1850 6250 1750 6250
+Connection ~ 1750 6250
+Wire Wire Line
+	1750 6150 1750 6250
+Wire Wire Line
+	1850 6150 1750 6150
+Wire Wire Line
+	1500 6050 1850 6050
+Wire Wire Line
+	1500 5900 1500 6050
+$Comp
+L agc_monitor:+4SW #PWR?
+U 1 1 5CAD7D18
+P 1500 5900
+AR Path="/5C9CEEB8/5CAD7D18" Ref="#PWR?"  Part="1" 
+AR Path="/5CA12007/5CAD7D18" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAD7D18" Ref="#PWR0105"  Part="1" 
+F 0 "#PWR0105" H 1500 5750 50  0001 C CNN
+F 1 "+4SW" H 1500 6050 50  0000 C CNN
+F 2 "" H 1500 5900 50  0001 C CNN
+F 3 "" H 1500 5900 50  0001 C CNN
+	1    1500 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 5950 1850 5950
+Wire Wire Line
+	1800 5900 1800 5950
+$Comp
+L agc_monitor:BPLSSW #PWR?
+U 1 1 5CAD7D20
+P 1800 5900
+AR Path="/5C9CEEB8/5CAD7D20" Ref="#PWR?"  Part="1" 
+AR Path="/5CA12007/5CAD7D20" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAD7D20" Ref="#PWR0106"  Part="1" 
+F 0 "#PWR0106" H 1800 5750 50  0001 C CNN
+F 1 "BPLSSW" H 1800 6050 50  0000 C CNN
+F 2 "" H 1800 5900 50  0001 C CNN
+F 3 "" H 1800 5900 50  0001 C CNN
+	1    1800 5900
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 5350 0    50   Output ~ 0
+MTHI
+Wire Wire Line
+	1800 5350 1850 5350
+Wire Wire Line
+	1850 5450 1800 5450
+Text GLabel 1800 5450 0    50   Output ~ 0
+MTLO
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5CAD7D2A
+P 2050 6050
+AR Path="/5C9CEEB8/5CAD7D2A" Ref="J?"  Part="1" 
+AR Path="/5CA12007/5CAD7D2A" Ref="J?"  Part="1" 
+AR Path="/5CA99762/5CAD7D2A" Ref="J1"  Part="1" 
+F 0 "J1" H 2130 6042 50  0000 L CNN
+F 1 "Conn_01x04" H 2130 5951 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 2050 6050 50  0001 C CNN
+F 3 "~" H 2050 6050 50  0001 C CNN
+	1    2050 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5CAD7D31
+P 2050 5350
+AR Path="/5C9CEEB8/5CAD7D31" Ref="J?"  Part="1" 
+AR Path="/5CA12007/5CAD7D31" Ref="J?"  Part="1" 
+AR Path="/5CA99762/5CAD7D31" Ref="J3"  Part="1" 
+F 0 "J3" H 2130 5342 50  0000 L CNN
+F 1 "Conn_01x02" H 2130 5251 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 2050 5350 50  0001 C CNN
+F 3 "~" H 2050 5350 50  0001 C CNN
+	1    2050 5350
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 6800 0    50   Output ~ 0
+CTRL1
+Wire Wire Line
+	1800 6800 1850 6800
+Wire Wire Line
+	1850 6900 1800 6900
+Text GLabel 1800 6900 0    50   Output ~ 0
+CTRL2
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5CAE8083
+P 2050 6900
+AR Path="/5C9CEEB8/5CAE8083" Ref="J?"  Part="1" 
+AR Path="/5CA12007/5CAE8083" Ref="J?"  Part="1" 
+AR Path="/5CA99762/5CAE8083" Ref="J2"  Part="1" 
+F 0 "J2" H 2130 6892 50  0000 L CNN
+F 1 "Conn_01x04" H 2130 6801 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 2050 6900 50  0001 C CNN
+F 3 "~" H 2050 6900 50  0001 C CNN
+	1    2050 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAEC808
+P 1750 7200
+AR Path="/5C9CEEB8/5CAEC808" Ref="#PWR?"  Part="1" 
+AR Path="/5CA12007/5CAEC808" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAEC808" Ref="#PWR0173"  Part="1" 
+F 0 "#PWR0173" H 1750 6950 50  0001 C CNN
+F 1 "GND" H 1755 7027 50  0000 C CNN
+F 2 "" H 1750 7200 50  0001 C CNN
+F 3 "" H 1750 7200 50  0001 C CNN
+	1    1750 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 7100 1750 7200
+Wire Wire Line
+	1850 7100 1750 7100
+Connection ~ 1750 7100
+Wire Wire Line
+	1750 7000 1750 7100
+Wire Wire Line
+	1850 7000 1750 7000
+$Comp
+L Device:R_US R?
+U 1 1 5CAFD370
+P 4500 5750
+AR Path="/5CA12007/5CAFD370" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CAFD370" Ref="R67"  Part="1" 
+F 0 "R67" H 4568 5796 50  0000 L CNN
+F 1 "3k" H 4568 5705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4540 5740 50  0001 C CNN
+F 3 "~" H 4500 5750 50  0001 C CNN
+	1    4500 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L agc_monitor:+3V3_FPGA #PWR?
+U 1 1 5CAFD376
+P 4500 5550
+AR Path="/5CA12007/5CAFD376" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CAFD376" Ref="#PWR0174"  Part="1" 
+F 0 "#PWR0174" H 4500 5400 50  0001 C CNN
+F 1 "+3V3_FPGA" H 4485 5723 50  0000 C CNN
+F 2 "" H 4500 5550 50  0001 C CNN
+F 3 "" H 4500 5550 50  0001 C CNN
+	1    4500 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 5550 4500 5600
+Wire Wire Line
+	4400 5950 4500 5950
+Wire Wire Line
+	4500 5950 4500 5900
+$Comp
+L Device:R_US R?
+U 1 1 5CB1128B
+P 5250 5750
+AR Path="/5CA12007/5CB1128B" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CB1128B" Ref="R68"  Part="1" 
+F 0 "R68" H 5318 5796 50  0000 L CNN
+F 1 "3k" H 5318 5705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5290 5740 50  0001 C CNN
+F 3 "~" H 5250 5750 50  0001 C CNN
+	1    5250 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L agc_monitor:+3V3_FPGA #PWR?
+U 1 1 5CB11291
+P 5250 5550
+AR Path="/5CA12007/5CB11291" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CB11291" Ref="#PWR0175"  Part="1" 
+F 0 "#PWR0175" H 5250 5400 50  0001 C CNN
+F 1 "+3V3_FPGA" H 5235 5723 50  0000 C CNN
+F 2 "" H 5250 5550 50  0001 C CNN
+F 3 "" H 5250 5550 50  0001 C CNN
+	1    5250 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 5550 5250 5600
+Wire Wire Line
+	5150 5950 5250 5950
+Wire Wire Line
+	5250 5950 5250 5900
+Text GLabel 4400 6800 0    50   Output ~ 0
+STRT1
+Text GLabel 5150 6800 0    50   BiDi ~ 0
+STRT2
+$Comp
+L Device:R_US R?
+U 1 1 5CB1DC65
+P 4500 6600
+AR Path="/5CA12007/5CB1DC65" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CB1DC65" Ref="R69"  Part="1" 
+F 0 "R69" H 4568 6646 50  0000 L CNN
+F 1 "3k" H 4568 6555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4540 6590 50  0001 C CNN
+F 3 "~" H 4500 6600 50  0001 C CNN
+	1    4500 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L agc_monitor:+3V3_FPGA #PWR?
+U 1 1 5CB1DC6B
+P 4500 6400
+AR Path="/5CA12007/5CB1DC6B" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CB1DC6B" Ref="#PWR0176"  Part="1" 
+F 0 "#PWR0176" H 4500 6250 50  0001 C CNN
+F 1 "+3V3_FPGA" H 4485 6573 50  0000 C CNN
+F 2 "" H 4500 6400 50  0001 C CNN
+F 3 "" H 4500 6400 50  0001 C CNN
+	1    4500 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 6400 4500 6450
+Wire Wire Line
+	4400 6800 4500 6800
+Wire Wire Line
+	4500 6800 4500 6750
+$Comp
+L Device:R_US R?
+U 1 1 5CB1DC74
+P 5250 6600
+AR Path="/5CA12007/5CB1DC74" Ref="R?"  Part="1" 
+AR Path="/5CA99762/5CB1DC74" Ref="R70"  Part="1" 
+F 0 "R70" H 5318 6646 50  0000 L CNN
+F 1 "3k" H 5318 6555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5290 6590 50  0001 C CNN
+F 3 "~" H 5250 6600 50  0001 C CNN
+	1    5250 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L agc_monitor:+3V3_FPGA #PWR?
+U 1 1 5CB1DC7A
+P 5250 6400
+AR Path="/5CA12007/5CB1DC7A" Ref="#PWR?"  Part="1" 
+AR Path="/5CA99762/5CB1DC7A" Ref="#PWR0177"  Part="1" 
+F 0 "#PWR0177" H 5250 6250 50  0001 C CNN
+F 1 "+3V3_FPGA" H 5235 6573 50  0000 C CNN
+F 2 "" H 5250 6400 50  0001 C CNN
+F 3 "" H 5250 6400 50  0001 C CNN
+	1    5250 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 6400 5250 6450
+Wire Wire Line
+	5150 6800 5250 6800
+Wire Wire Line
+	5250 6800 5250 6750
+$EndSCHEMATC
