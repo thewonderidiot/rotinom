@@ -532,7 +532,7 @@ F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 1650 2950 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 1050 2950 0    50   Input ~ 0
-MSTBSTP
+MSBSTP
 Wire Wire Line
 	1050 2950 1100 2950
 $Comp

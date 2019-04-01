@@ -765,4 +765,80 @@ Wire Wire Line
 	5050 3850 5100 3850
 Text GLabel 5050 3850 0    50   Output ~ 0
 CTRL1
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5C9F8C28
+P 8900 2400
+F 0 "H1" H 8850 2600 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9000 2360 50  0001 L CNN
+F 2 "agc_monitor:MountingHole_ANSI_4" H 8900 2400 50  0001 C CNN
+F 3 "~" H 8900 2400 50  0001 C CNN
+	1    8900 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5C9F8D9C
+P 9100 2400
+F 0 "H2" H 9050 2600 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9200 2360 50  0001 L CNN
+F 2 "agc_monitor:MountingHole_ANSI_4" H 9100 2400 50  0001 C CNN
+F 3 "~" H 9100 2400 50  0001 C CNN
+	1    9100 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5CA02E57
+P 9300 2400
+F 0 "H3" H 9250 2600 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9400 2360 50  0001 L CNN
+F 2 "agc_monitor:MountingHole_ANSI_4" H 9300 2400 50  0001 C CNN
+F 3 "~" H 9300 2400 50  0001 C CNN
+	1    9300 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5CA02E5D
+P 9500 2400
+F 0 "H4" H 9450 2600 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9600 2360 50  0001 L CNN
+F 2 "agc_monitor:MountingHole_ANSI_4" H 9500 2400 50  0001 C CNN
+F 3 "~" H 9500 2400 50  0001 C CNN
+	1    9500 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 2500 8900 2550
+Wire Wire Line
+	8900 2550 9100 2550
+Wire Wire Line
+	9500 2550 9500 2500
+Wire Wire Line
+	9300 2500 9300 2550
+Connection ~ 9300 2550
+Wire Wire Line
+	9300 2550 9500 2550
+Wire Wire Line
+	9100 2500 9100 2550
+Connection ~ 9100 2550
+Wire Wire Line
+	9100 2550 9200 2550
+Wire Wire Line
+	9200 2550 9200 2600
+Connection ~ 9200 2550
+Wire Wire Line
+	9200 2550 9300 2550
+$Comp
+L power:GND #PWR0178
+U 1 1 5CA35FFD
+P 9200 2600
+F 0 "#PWR0178" H 9200 2350 50  0001 C CNN
+F 1 "GND" H 9205 2427 50  0000 C CNN
+F 2 "" H 9200 2600 50  0001 C CNN
+F 3 "" H 9200 2600 50  0001 C CNN
+	1    9200 2600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
