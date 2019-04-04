@@ -16,17 +16,6 @@ Comment4 ""
 $EndDescr
 $Comp
 L agc_monitor:Styx_P4 J4
-U 1 1 5C9E4962
-P 3250 2100
-F 0 "J4" H 3275 3383 50  0000 C CNN
-F 1 "Styx_P4" H 3275 3384 50  0001 C CNN
-F 2 "agc_monitor:PinHeader_4x24_P2.54mm_Vertical" H 3600 2100 50  0001 C CNN
-F 3 "" H 3600 2100 50  0001 C CNN
-	1    3250 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L agc_monitor:Styx_P4 J4
 U 2 1 5C9E5318
 P 6550 2100
 F 0 "J4" H 6575 3383 50  0000 C CNN
@@ -785,24 +774,24 @@ MBR1
 Wire Wire Line
 	3850 1550 3800 1550
 Wire Wire Line
-	2750 1050 2500 1050
-Text Label 2500 1050 0    50   ~ 0
-DBG1
-Wire Wire Line
-	2750 1150 2500 1150
-Text Label 2500 1150 0    50   ~ 0
-DBG2
-Wire Wire Line
 	2750 1250 2500 1250
 Text Label 2500 1250 0    50   ~ 0
-DBG3
+DBG1
 Wire Wire Line
 	2750 1350 2500 1350
 Text Label 2500 1350 0    50   ~ 0
+DBG2
+Wire Wire Line
+	2750 1050 2500 1050
+Text Label 2500 1050 0    50   ~ 0
+DBG3
+Wire Wire Line
+	2750 1150 2500 1150
+Text Label 2500 1150 0    50   ~ 0
 DBG4
 Wire Wire Line
-	2750 1450 2500 1450
-Text Label 2500 1450 0    50   ~ 0
+	3800 1250 4050 1250
+Text Label 4050 1250 2    50   ~ 0
 DBG5
 Wire Wire Line
 	3800 1050 4050 1050
@@ -813,68 +802,62 @@ Wire Wire Line
 Text Label 4050 1150 2    50   ~ 0
 DBG7
 Wire Wire Line
-	3800 1250 4050 1250
-Text Label 4050 1250 2    50   ~ 0
+	6050 1050 5800 1050
+Text Label 5800 1050 0    50   ~ 0
 DBG8
 Wire Wire Line
-	3800 1350 4050 1350
-Text Label 4050 1350 2    50   ~ 0
+	7100 1050 7350 1050
+Text Label 7350 1050 2    50   ~ 0
 DBG9
-Wire Wire Line
-	3800 1450 4100 1450
-Text Label 4100 1450 2    50   ~ 0
-DBG10
-Wire Wire Line
-	6050 1050 5750 1050
-Text Label 5750 1050 0    50   ~ 0
-DBG11
 Wire Wire Line
 	6050 1150 5750 1150
 Text Label 5750 1150 0    50   ~ 0
-DBG12
+DBG10
 Wire Wire Line
-	7100 1050 7400 1050
-Text Label 7400 1050 2    50   ~ 0
-DBG13
+	3800 1350 4100 1350
+Text Label 4100 1350 2    50   ~ 0
+DBG11
 Wire Wire Line
 	7100 1150 7400 1150
 Text Label 7400 1150 2    50   ~ 0
+DBG12
+Wire Wire Line
+	3800 1450 4100 1450
+Text Label 4100 1450 2    50   ~ 0
+DBG13
+Wire Wire Line
+	2750 1450 2450 1450
+Text Label 2450 1450 0    50   ~ 0
 DBG14
 Wire Wire Line
-	6050 3850 5750 3850
-Text Label 5750 3850 0    50   ~ 0
+	6050 4050 5750 4050
+Text Label 5750 4050 0    50   ~ 0
 DBG15
 Wire Wire Line
 	6050 3950 5750 3950
 Text Label 5750 3950 0    50   ~ 0
 DBG16
 Wire Wire Line
-	6050 4050 5750 4050
-Text Label 5750 4050 0    50   ~ 0
+	6050 3850 5750 3850
+Text Label 5750 3850 0    50   ~ 0
 DBG17
 Wire Wire Line
-	7100 3850 7400 3850
-Text Label 7400 3850 2    50   ~ 0
+	7100 4050 7400 4050
+Text Label 7400 4050 2    50   ~ 0
 DBG18
 Wire Wire Line
 	7100 3950 7400 3950
 Text Label 7400 3950 2    50   ~ 0
 DBG19
 Wire Wire Line
-	7100 4050 7400 4050
-Text Label 7400 4050 2    50   ~ 0
+	7100 3850 7400 3850
+Text Label 7400 3850 2    50   ~ 0
 DBG20
 Wire Wire Line
 	3800 950  4200 950 
 Text Label 4200 950  2    50   ~ 0
 DBG_3V3
 NoConn ~ 6050 3750
-NoConn ~ 7100 5950
-NoConn ~ 3800 5950
-NoConn ~ 7100 3250
-NoConn ~ 3800 3250
-NoConn ~ 2750 3250
-NoConn ~ 6050 3250
 $Comp
 L Connector_Generic:Conn_02x12_Odd_Even J6
 U 1 1 5CE49FC7
@@ -899,76 +882,76 @@ Wire Wire Line
 Text Label 8500 1350 0    50   ~ 0
 DBG1
 Wire Wire Line
+	9250 1350 9500 1350
+Text Label 9500 1350 2    50   ~ 0
+DBG2
+Wire Wire Line
 	8750 1450 8500 1450
 Text Label 8500 1450 0    50   ~ 0
-DBG2
+DBG3
+Wire Wire Line
+	9250 1450 9500 1450
+Text Label 9500 1450 2    50   ~ 0
+DBG4
 Wire Wire Line
 	8750 1550 8500 1550
 Text Label 8500 1550 0    50   ~ 0
-DBG3
+DBG5
+Wire Wire Line
+	9250 1550 9500 1550
+Text Label 9500 1550 2    50   ~ 0
+DBG6
 Wire Wire Line
 	8750 1650 8500 1650
 Text Label 8500 1650 0    50   ~ 0
-DBG4
+DBG7
+Wire Wire Line
+	9250 1650 9500 1650
+Text Label 9500 1650 2    50   ~ 0
+DBG8
 Wire Wire Line
 	8750 1750 8500 1750
 Text Label 8500 1750 0    50   ~ 0
-DBG5
-Wire Wire Line
-	8750 1850 8500 1850
-Text Label 8500 1850 0    50   ~ 0
-DBG6
-Wire Wire Line
-	8750 1950 8500 1950
-Text Label 8500 1950 0    50   ~ 0
-DBG7
-Wire Wire Line
-	8750 2050 8500 2050
-Text Label 8500 2050 0    50   ~ 0
-DBG8
-Wire Wire Line
-	8750 2150 8500 2150
-Text Label 8500 2150 0    50   ~ 0
 DBG9
-Wire Wire Line
-	8750 2250 8450 2250
-Text Label 8450 2250 0    50   ~ 0
-DBG10
-Wire Wire Line
-	9250 1350 9550 1350
-Text Label 9550 1350 2    50   ~ 0
-DBG11
-Wire Wire Line
-	9250 1450 9550 1450
-Text Label 9550 1450 2    50   ~ 0
-DBG12
-Wire Wire Line
-	9250 1550 9550 1550
-Text Label 9550 1550 2    50   ~ 0
-DBG13
-Wire Wire Line
-	9250 1650 9550 1650
-Text Label 9550 1650 2    50   ~ 0
-DBG14
 Wire Wire Line
 	9250 1750 9550 1750
 Text Label 9550 1750 2    50   ~ 0
-DBG15
+DBG10
+Wire Wire Line
+	8750 1850 8450 1850
+Text Label 8450 1850 0    50   ~ 0
+DBG11
 Wire Wire Line
 	9250 1850 9550 1850
 Text Label 9550 1850 2    50   ~ 0
-DBG16
+DBG12
+Wire Wire Line
+	8750 1950 8450 1950
+Text Label 8450 1950 0    50   ~ 0
+DBG13
 Wire Wire Line
 	9250 1950 9550 1950
 Text Label 9550 1950 2    50   ~ 0
-DBG17
+DBG14
+Wire Wire Line
+	8750 2050 8450 2050
+Text Label 8450 2050 0    50   ~ 0
+DBG15
 Wire Wire Line
 	9250 2050 9550 2050
 Text Label 9550 2050 2    50   ~ 0
-DBG18
+DBG16
+Wire Wire Line
+	8750 2150 8450 2150
+Text Label 8450 2150 0    50   ~ 0
+DBG17
 Wire Wire Line
 	9250 2150 9550 2150
 Text Label 9550 2150 2    50   ~ 0
+DBG18
+Wire Wire Line
+	8750 2250 8450 2250
+Text Label 8450 2250 0    50   ~ 0
 DBG19
 Wire Wire Line
 	9250 2250 9550 2250
@@ -1000,4 +983,93 @@ Wire Wire Line
 Connection ~ 9000 2450
 Wire Wire Line
 	9000 2450 9300 2450
+$Comp
+L agc_monitor:Styx_P4 J4
+U 1 1 5C9E4962
+P 3250 2100
+F 0 "J4" H 3275 3383 50  0000 C CNN
+F 1 "Styx_P4" H 3275 3384 50  0001 C CNN
+F 2 "agc_monitor:PinHeader_4x24_P2.54mm_Vertical" H 3600 2100 50  0001 C CNN
+F 3 "" H 3600 2100 50  0001 C CNN
+	1    3250 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3250 2700 3250
+Wire Wire Line
+	2700 3250 2700 3550
+Wire Wire Line
+	2700 3550 3300 3550
+Wire Wire Line
+	3850 3550 3850 3250
+Wire Wire Line
+	3850 3250 3800 3250
+$Comp
+L agc_monitor:+3V3_FPGA #PWR0188
+U 1 1 5D1611E0
+P 3300 3550
+F 0 "#PWR0188" H 3300 3400 50  0001 C CNN
+F 1 "+3V3_FPGA" H 3285 3723 50  0000 C CNN
+F 2 "" H 3300 3550 50  0001 C CNN
+F 3 "" H 3300 3550 50  0001 C CNN
+	1    3300 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 3300 3550
+Wire Wire Line
+	3300 3550 3850 3550
+Wire Wire Line
+	6000 3250 6000 3550
+Wire Wire Line
+	6000 3550 6600 3550
+Wire Wire Line
+	7150 3550 7150 3250
+$Comp
+L agc_monitor:+3V3_FPGA #PWR0189
+U 1 1 5D162096
+P 6600 3550
+F 0 "#PWR0189" H 6600 3400 50  0001 C CNN
+F 1 "+3V3_FPGA" H 6585 3723 50  0000 C CNN
+F 2 "" H 6600 3550 50  0001 C CNN
+F 3 "" H 6600 3550 50  0001 C CNN
+	1    6600 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 6600 3550
+Wire Wire Line
+	6600 3550 7150 3550
+Wire Wire Line
+	6050 3250 6000 3250
+Wire Wire Line
+	7100 3250 7150 3250
+Wire Wire Line
+	3800 5950 4650 5950
+Wire Wire Line
+	4650 5950 4650 5850
+$Comp
+L agc_monitor:+3V3_FPGA #PWR0190
+U 1 1 5D20B833
+P 4650 5850
+F 0 "#PWR0190" H 4650 5700 50  0001 C CNN
+F 1 "+3V3_FPGA" H 4635 6023 50  0000 C CNN
+F 2 "" H 4650 5850 50  0001 C CNN
+F 3 "" H 4650 5850 50  0001 C CNN
+	1    4650 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 5950 7950 5950
+Wire Wire Line
+	7950 5950 7950 5850
+$Comp
+L agc_monitor:+3V3_FPGA #PWR0191
+U 1 1 5D23C506
+P 7950 5850
+F 0 "#PWR0191" H 7950 5700 50  0001 C CNN
+F 1 "+3V3_FPGA" H 7935 6023 50  0000 C CNN
+F 2 "" H 7950 5850 50  0001 C CNN
+F 3 "" H 7950 5850 50  0001 C CNN
+	1    7950 5850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
