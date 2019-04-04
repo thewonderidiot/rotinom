@@ -1533,13 +1533,13 @@ F 3 "~" H 2050 5350 50  0001 C CNN
 	1    2050 5350
 	1    0    0    -1  
 $EndComp
-Text GLabel 1800 6800 0    50   Output ~ 0
+Text GLabel 1650 6800 0    50   Output ~ 0
 CTRL1
 Wire Wire Line
-	1800 6800 1850 6800
+	1650 6800 1850 6800
 Wire Wire Line
-	1850 6900 1800 6900
-Text GLabel 1800 6900 0    50   Output ~ 0
+	1850 7000 1650 7000
+Text GLabel 1650 7000 0    50   Output ~ 0
 CTRL2
 $Comp
 L Connector_Generic:Conn_01x04 J?
@@ -1574,10 +1574,6 @@ Wire Wire Line
 Wire Wire Line
 	1850 7100 1750 7100
 Connection ~ 1750 7100
-Wire Wire Line
-	1750 7000 1750 7100
-Wire Wire Line
-	1850 7000 1750 7000
 $Comp
 L Device:R_US R?
 U 1 1 5CAFD370
@@ -1718,4 +1714,8 @@ Wire Wire Line
 	1450 6150 1850 6150
 Wire Wire Line
 	1450 5900 1450 6150
+Wire Wire Line
+	1750 6900 1850 6900
+Wire Wire Line
+	1750 6900 1750 7100
 $EndSCHEMATC

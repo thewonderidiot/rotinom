@@ -802,32 +802,32 @@ Wire Wire Line
 Text Label 4050 1150 2    50   ~ 0
 DBG7
 Wire Wire Line
-	6050 1050 5800 1050
-Text Label 5800 1050 0    50   ~ 0
+	3800 1350 4050 1350
+Text Label 4050 1350 2    50   ~ 0
 DBG8
 Wire Wire Line
-	7100 1050 7350 1050
-Text Label 7350 1050 2    50   ~ 0
+	3800 1450 4050 1450
+Text Label 4050 1450 2    50   ~ 0
 DBG9
-Wire Wire Line
-	6050 1150 5750 1150
-Text Label 5750 1150 0    50   ~ 0
-DBG10
-Wire Wire Line
-	3800 1350 4100 1350
-Text Label 4100 1350 2    50   ~ 0
-DBG11
-Wire Wire Line
-	7100 1150 7400 1150
-Text Label 7400 1150 2    50   ~ 0
-DBG12
-Wire Wire Line
-	3800 1450 4100 1450
-Text Label 4100 1450 2    50   ~ 0
-DBG13
 Wire Wire Line
 	2750 1450 2450 1450
 Text Label 2450 1450 0    50   ~ 0
+DBG10
+Wire Wire Line
+	6050 1050 5750 1050
+Text Label 5750 1050 0    50   ~ 0
+DBG11
+Wire Wire Line
+	6050 1150 5750 1150
+Text Label 5750 1150 0    50   ~ 0
+DBG12
+Wire Wire Line
+	7100 1050 7400 1050
+Text Label 7400 1050 2    50   ~ 0
+DBG13
+Wire Wire Line
+	7100 1150 7400 1150
+Text Label 7400 1150 2    50   ~ 0
 DBG14
 Wire Wire Line
 	6050 4050 5750 4050
