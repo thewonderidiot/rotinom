@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Apr  4 22:19:17 2019
+# Process ID: 18284
+# Current directory: /home/mike/rotinom/fpga/rotinom.runs/core_memory_synth_1
+# Command line: vivado -log core_memory.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source core_memory.tcl
+# Log file: /home/mike/rotinom/fpga/rotinom.runs/core_memory_synth_1/core_memory.vds
+# Journal file: /home/mike/rotinom/fpga/rotinom.runs/core_memory_synth_1/vivado.jou
+#-----------------------------------------------------------
+source core_memory.tcl -notrace
