@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:rotinom-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -29,6 +29,8 @@ $Comp
 L agc_monitor:Styx_P5 J5
 U 1 1 5C9E54DF
 P 3250 4900
+AR Path="/5C9E54DF" Ref="J5"  Part="1" 
+AR Path="/5C9E42AF/5C9E54DF" Ref="J5"  Part="1" 
 F 0 "J5" H 3275 6183 50  0000 C CNN
 F 1 "Styx_P5" H 3275 6184 50  0001 C CNN
 F 2 "agc_monitor:PinHeader_4x24_P2.54mm_Vertical" H 3600 4900 50  0001 C CNN
@@ -40,6 +42,8 @@ $Comp
 L agc_monitor:Styx_P5 J5
 U 2 1 5C9E5630
 P 6550 4900
+AR Path="/5C9E5630" Ref="J5"  Part="2" 
+AR Path="/5C9E42AF/5C9E5630" Ref="J5"  Part="2" 
 F 0 "J5" H 6575 6183 50  0000 C CNN
 F 1 "Styx_P5" H 6575 6184 50  0001 C CNN
 F 2 "agc_monitor:PinHeader_4x24_P2.54mm_Vertical" H 6900 4900 50  0001 C CNN
