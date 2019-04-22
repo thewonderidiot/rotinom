@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="rotinom_hw_platform_0" key="programflash.hwplatform"/>
+	<item value="false" key="rotinom_hw_platform_0-verifyFlash"/>
+	<item value="Auto Detect" key="rotinom_hw_platform_0-device"/>
+	<item value="/home/mike/rotinom/fpga/rotinom.sdk/rotinom/bootimage/BOOT.mcs" key="rotinom_hw_platform_0-imgFile"/>
+	<item value="Local" key="rotinom_hw_platform_0-target"/>
+	<item value="/home/mike/rotinom/fpga/rotinom.sdk/fsbl/Debug/fsbl.elf" key="rotinom_hw_platform_0-fsblFile"/>
+	<item value="" key="rotinom_hw_platform_0-offSet"/>
+	<item value="qspi-x4-single" key="rotinom_hw_platform_0-flashType"/>
+	<item value="false" key="rotinom_hw_platform_0-blankCheck"/>
+</section>

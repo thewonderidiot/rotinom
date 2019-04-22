@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1554446500">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1555483641">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BG-DRC" Name="rotinom.drc"/>
   <File Type="BG-BGN" Name="rotinom.bgn"/>
@@ -292,6 +292,6 @@
     <Step Id="write_bitstream"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="core_memory"/>
-  <BlockFileSet Type="BlockSrcs" Name="prop_clk_div"/>
   <BlockFileSet Type="BlockSrcs" Name="rotinom_ps_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="prop_clk_div"/>
 </GenRun>

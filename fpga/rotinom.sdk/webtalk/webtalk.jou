@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# 
+# Start of session at: Sat Apr  6 00:34:52 2019
+# Process ID: 16113
+# Current directory: /home/mike/rotinom/fpga/rotinom.sdk/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /home/mike/rotinom/fpga/rotinom.sdk/webtalk/webtalk.log
+# Journal file: /home/mike/rotinom/fpga/rotinom.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
