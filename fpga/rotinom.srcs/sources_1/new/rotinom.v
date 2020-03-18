@@ -7,7 +7,7 @@ module rotinom(
 
     // Monitor inouts (FIXME: push these down into the AGC)
     output wire STRT1,
-    output wire STRT2,
+    output reg STRT2,
     output wire ALGA,
 
     // Monitor inputs
@@ -141,6 +141,14 @@ module rotinom(
 
     output wire MON800,
 
+    // Debug
+    input wire DBG1,
+    input wire DBG2,
+    input wire DBG3,
+    input wire DBG4,
+    input wire DBG5,
+    input wire DBG6,
+
     // Zynq PS I/O
     inout wire [14:0] DDR_addr,
     inout wire [2:0] DDR_ba,
@@ -166,7 +174,6 @@ module rotinom(
 );
 
 assign STRT1 = 1'b0;
-assign STRT2 = 1'b0;
 assign ALGA = 1'b0;
 
 // Un-inverted RTL inputs
@@ -442,12 +449,12 @@ reg CDUYM = 0; //input
 reg CDUYP = 0; //input
 reg CDUZM = 0; //input
 reg CDUZP = 0; //input
-reg CTLSAT = 0; //input
+wire CTLSAT; //input
 reg DKBSNC = 0; //input
 reg DKEND = 0; //input
 reg DKSTRT = 0; //input
 reg FLTOUT = 0;
-reg FREFUN = 0; //input
+wire FREFUN; //input
 reg GATEX_n = 1; //input
 reg GATEY_n = 1; //input
 reg GATEZ_n = 1; //input
@@ -465,7 +472,7 @@ reg IN3216 = 0; //input
 reg IN3301 = 0; //input
 reg ISSTOR = 0; //input
 reg LEMATT = 0; //input
-reg LFTOFF = 0; //input
+wire LFTOFF; //input
 reg LRIN0 = 0; //input
 reg LRIN1 = 0; //input
 reg LRRLSC = 0; //input
@@ -501,7 +508,7 @@ reg NKEY4 = 0; //input
 reg NKEY5 = 0; //input
 reg OPCDFL = 0; //input
 reg OPMSW2 = 0; //input
-reg OPMSW3 = 0; //input
+wire OPMSW3; //input
 reg PCHGOF = 0; //input
 wire PIPAXm; //input
 wire PIPAXp; //input
@@ -514,7 +521,7 @@ reg RRIN0 = 0; //input
 reg RRIN1 = 0; //input
 reg RRPONA = 0; //input
 reg RRRLSC = 0; //input
-reg S4BSAB = 0; //input
+wire S4BSAB; //input
 reg SBYBUT = 0; //input
 reg SCAFAL = 0;
 reg SHAFTM = 0; //input
@@ -601,6 +608,33 @@ assign PIPAZm = PIPDAT && (moding_counter >= 3'd3);
 assign PIPAXp = PIPDAT && (moding_counter < 3'd3);
 assign PIPAYp = PIPDAT && (moding_counter < 3'd3);
 assign PIPAZp = PIPDAT && (moding_counter < 3'd3);
+
+// STRT2 handling
+reg [18:0] strt2_count;
+always @(posedge CLOCK or negedge rst_n) begin
+    if (~rst_n) begin
+        STRT2 <= 1'b1;
+        strt2_count <= 19'b0;
+    end else begin
+        if (~DBG1) begin
+            STRT2 <= 1'b1;
+            strt2_count <= 19'b0;
+        end else begin
+            if (strt2_count < 19'd409600) begin
+                strt2_count <= strt2_count + 1;
+            end else begin
+                STRT2 <= 1'b0;
+            end
+        end
+    end
+end
+
+// Switches for P63
+assign CTLSAT = DBG2;
+assign LFTOFF = DBG3;
+assign FREFUN = DBG4;
+assign OPMSW3 = DBG5;
+assign S4BSAB = DBG6;
 
 // AGC
 fpga_agc agc(p4VDC, p4VSW, GND, ~rst_n, prop_clk, BLKUPL_n, BMGXM, BMGXP, BMGYM, BMGYP, BMGZM, BMGZP, CAURST, CDUFAL, CDUXM, CDUXP, CDUYM, CDUYP, CDUZM, CDUZP, CLOCK, CTLSAT, DBLTST, DKBSNC, DKEND, DKSTRT, DOSCAL, FLTOUT, FREFUN, GATEX_n, GATEY_n, GATEZ_n, GCAPCL, GUIREL, HOLFUN, IMUCAG, IMUFAL, IMUOPR, IN3008, IN3212, IN3213, IN3214, IN3216, IN3301, ISSTOR, LEMATT, LFTOFF, LRIN0, LRIN1, LRRLSC, LVDAGD, MAINRS, MAMU, MANmP, MANmR, MANmY, MANpP, MANpR, MANpY, MARK, MDT01, MDT02, MDT03, MDT04, MDT05, MDT06, MDT07, MDT08, MDT09, MDT10, MDT11, MDT12, MDT13, MDT14, MDT15, MDT16, MKEY1, MKEY2, MKEY3, MKEY4, MKEY5, MLDCH, MLOAD, MNHNC, MNHRPT, MNHSBF, MNIMmP, MNIMmR, MNIMmY, MNIMpP, MNIMpR, MNIMpY, MONPAR, MONWBK, MRDCH, MREAD, MRKREJ, MRKRST, MSTP, MSTRT, MTCSAI, MYCLMP, NAVRST, NHALGA, NHVFAL, NKEY1, NKEY2, NKEY3, NKEY4, NKEY5, OPCDFL, OPMSW2, OPMSW3, PCHGOF, PIPAXm, PIPAXp, PIPAYm, PIPAYp, PIPAZm, PIPAZp, ROLGOF, RRIN0, RRIN1, RRPONA, RRRLSC, S4BSAB, SBYBUT, SCAFAL, SHAFTM, SHAFTP, SIGNX, SIGNY, SIGNZ, SMSEPR, SPSRDY, STRPRS, STRT2, TEMPIN, TRANmX, TRANmY, TRANmZ, TRANpX, TRANpY, TRANpZ, TRNM, TRNP, TRST10, TRST9, ULLTHR, UPL0, UPL1, VFAIL, XLNK0, XLNK1, ZEROP, n2FSFAL, CDUXDM, CDUXDP, CDUYDM, CDUYDP, CDUZDM, CDUZDP, CLK, COMACT, DKDATA, KYRLS, MBR1_pp, MBR2_pp, MCTRAL_n_pp, MGOJAM_pp, MGP_n_pp, MIIP_pp, MINHL_pp, MINKL_pp, MNISQ_pp, MON800_pp, MONWT_pp, MOSCAL_n_pp, MPAL_n_pp, MPIPAL_n_pp, MRAG_pp, MRCH_pp, MREQIN_pp, MRGG_pp, MRLG_pp, MRPTAL_n_pp, MRSC_pp, MRULOG_pp, MSCAFL_n_pp, MSCDBL_n_pp, MSP_pp, MSQ10_pp, MSQ11_pp, MSQ12_pp, MSQ13_pp, MSQ14_pp, MSQ16_pp, MSQEXT_pp, MST1_pp, MST2_pp, MST3_pp, MSTPIT_n_pp, MT01_pp, MT02_pp, MT03_pp, MT04_pp, MT05_pp, MT06_pp, MT07_pp, MT08_pp, MT09_pp, MT10_pp, MT11_pp, MT12_pp, MTCAL_n_pp, MTCSA_n_pp, MVFAIL_n_pp, MWAG_pp, MWARNF_n_pp, MWATCH_n_pp, MWBBEG_pp, MWBG_pp, MWCH_pp, MWEBG_pp, MWFBG_pp, MWG_pp, MWL01_pp, MWL02_pp, MWL03_pp, MWL04_pp, MWL05_pp, MWL06_pp, MWL07_pp, MWL08_pp, MWL09_pp, MWL10_pp, MWL11_pp, MWL12_pp, MWL13_pp, MWL14_pp, MWL15_pp, MWL16_pp, MWLG_pp, MWQG_pp, MWSG_pp, MWYG_pp, MWZG_pp, OPEROR, PIPASW, PIPDAT, RESTRT, RLYB01, RLYB02, RLYB03, RLYB04, RLYB05, RLYB06, RLYB07, RLYB08, RLYB09, RLYB10, RLYB11, RYWD12, RYWD13, RYWD14, RYWD16, SBYLIT, SBYREL_n, TMPCAU, UPLACT, VNFLSH);

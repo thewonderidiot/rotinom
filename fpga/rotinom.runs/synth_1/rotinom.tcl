@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7z020clg484-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -32,6 +33,7 @@ set_property board_part numato.com:styx:part0:1.0 [current_project]
 set_property ip_output_repo /home/mike/rotinom/fpga/rotinom.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 add_files /home/mike/rotinom/roms/Aurora12.coe
+add_files /home/mike/rotinom/roms/Luminary099.coe
 read_verilog -library xil_defaultlib {
   /home/mike/rotinom/fpga/rotinom.srcs/sources_1/imports/components/MR0A16A.v
   /home/mike/rotinom/fpga/rotinom.srcs/sources_1/imports/components/SST39VF200A.v
@@ -57,9 +59,6 @@ add_files /home/mike/rotinom/fpga/rotinom.srcs/sources_1/bd/rotinom_ps/rotinom_p
 set_property used_in_implementation false [get_files -all /home/mike/rotinom/fpga/rotinom.srcs/sources_1/bd/rotinom_ps/ip/rotinom_ps_processing_system7_0_0/rotinom_ps_processing_system7_0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/mike/rotinom/fpga/rotinom.srcs/sources_1/bd/rotinom_ps/rotinom_ps_ooc.xdc]
 
-read_ip -quiet /home/mike/rotinom/fpga/rotinom.srcs/sources_1/ip/rope_memory/rope_memory.xci
-set_property used_in_implementation false [get_files -all /home/mike/rotinom/fpga/rotinom.srcs/sources_1/ip/rope_memory/rope_memory_ooc.xdc]
-
 read_ip -quiet /home/mike/rotinom/fpga/rotinom.srcs/sources_1/ip/prop_clk_div/prop_clk_div.xci
 set_property used_in_implementation false [get_files -all /home/mike/rotinom/fpga/rotinom.srcs/sources_1/ip/prop_clk_div/prop_clk_div_board.xdc]
 set_property used_in_implementation false [get_files -all /home/mike/rotinom/fpga/rotinom.srcs/sources_1/ip/prop_clk_div/prop_clk_div.xdc]
@@ -67,6 +66,9 @@ set_property used_in_implementation false [get_files -all /home/mike/rotinom/fpg
 
 read_ip -quiet /home/mike/rotinom/fpga/rotinom.srcs/sources_1/ip/core_memory/core_memory.xci
 set_property used_in_implementation false [get_files -all /home/mike/rotinom/fpga/rotinom.srcs/sources_1/ip/core_memory/core_memory_ooc.xdc]
+
+read_ip -quiet /home/mike/rotinom/fpga/rotinom.srcs/sources_1/ip/rope_memory/rope_memory.xci
+set_property used_in_implementation false [get_files -all /home/mike/rotinom/fpga/rotinom.srcs/sources_1/ip/rope_memory/rope_memory_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

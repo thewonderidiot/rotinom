@@ -65,6 +65,7 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7z020clg484-1
   set_property board_part numato.com:styx:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
@@ -78,9 +79,9 @@ set rc [catch {
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
   add_files /home/mike/rotinom/fpga/rotinom.srcs/sources_1/bd/rotinom_ps/rotinom_ps.bd
-  read_ip -quiet /home/mike/rotinom/fpga/rotinom.srcs/sources_1/ip/rope_memory/rope_memory.xci
   read_ip -quiet /home/mike/rotinom/fpga/rotinom.srcs/sources_1/ip/prop_clk_div/prop_clk_div.xci
   read_ip -quiet /home/mike/rotinom/fpga/rotinom.srcs/sources_1/ip/core_memory/core_memory.xci
+  read_ip -quiet /home/mike/rotinom/fpga/rotinom.srcs/sources_1/ip/rope_memory/rope_memory.xci
   set_param project.isImplRun false
   read_xdc /home/mike/rotinom/fpga/rotinom.srcs/constrs_1/new/rotinom.xdc
   set_param project.isImplRun true

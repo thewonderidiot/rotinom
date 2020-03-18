@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Thu Apr  4 23:38:19 2019
-# Process ID: 28074
+# Start of session at: Mon Apr 29 19:08:13 2019
+# Process ID: 21142
 # Current directory: /home/mike/rotinom/fpga/rotinom.runs/synth_1
 # Command line: vivado -log rotinom.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rotinom.tcl
 # Log file: /home/mike/rotinom/fpga/rotinom.runs/synth_1/rotinom.vds
@@ -18,13 +18,13 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 28101 
+INFO: Helper process launched with PID 21289 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1350.168 ; gain = 0.000 ; free physical = 2364 ; free virtual = 17727
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1349.926 ; gain = 0.000 ; free physical = 1724 ; free virtual = 16810
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'rotinom' [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/new/rotinom.v:4]
-INFO: [Synth 8-6157] synthesizing module 'prop_clk_div' [/home/mike/rotinom/fpga/rotinom.runs/synth_1/.Xil/Vivado-28074-luminary/realtime/prop_clk_div_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'prop_clk_div' (1#1) [/home/mike/rotinom/fpga/rotinom.runs/synth_1/.Xil/Vivado-28074-luminary/realtime/prop_clk_div_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'prop_clk_div' [/home/mike/rotinom/fpga/rotinom.runs/synth_1/.Xil/Vivado-21142-luminary/realtime/prop_clk_div_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'prop_clk_div' (1#1) [/home/mike/rotinom/fpga/rotinom.runs/synth_1/.Xil/Vivado-21142-luminary/realtime/prop_clk_div_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'agc_clk_div' [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/new/agc_clk_div.v:4]
 INFO: [Synth 8-6155] done synthesizing module 'agc_clk_div' (2#1) [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/new/agc_clk_div.v:4]
 INFO: [Synth 8-6157] synthesizing module 'fpga_agc' [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/new/fpga_agc.v:4]
@@ -509,8 +509,8 @@ INFO: [Synth 8-6157] synthesizing module 'U74HC04__parameterized26' [/home/mike/
 	Parameter delay bound to: 9 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'U74HC04__parameterized26' (13#1) [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/imports/components/U74HC04.v:4]
 INFO: [Synth 8-6157] synthesizing module 'SST39VF200A' [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/imports/components/SST39VF200A.v:4]
-INFO: [Synth 8-6157] synthesizing module 'rope_memory' [/home/mike/rotinom/fpga/rotinom.runs/synth_1/.Xil/Vivado-28074-luminary/realtime/rope_memory_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'rope_memory' (14#1) [/home/mike/rotinom/fpga/rotinom.runs/synth_1/.Xil/Vivado-28074-luminary/realtime/rope_memory_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'rope_memory' [/home/mike/rotinom/fpga/rotinom.runs/synth_1/.Xil/Vivado-21142-luminary/realtime/rope_memory_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rope_memory' (14#1) [/home/mike/rotinom/fpga/rotinom.runs/synth_1/.Xil/Vivado-21142-luminary/realtime/rope_memory_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'SST39VF200A' (15#1) [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/imports/components/SST39VF200A.v:4]
 INFO: [Synth 8-6157] synthesizing module 'U74HC04__parameterized27' [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/imports/components/U74HC04.v:4]
 	Parameter ic1 bound to: 1'b0 
@@ -546,8 +546,8 @@ INFO: [Synth 8-6157] synthesizing module 'tri_buf' [/home/mike/rotinom/fpga/roti
 INFO: [Synth 8-6155] done synthesizing module 'tri_buf' (16#1) [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/imports/components/tri_buf.v:4]
 INFO: [Synth 8-6155] done synthesizing module 'U74HC244' (17#1) [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/imports/components/U74HC244.v:4]
 INFO: [Synth 8-6157] synthesizing module 'MR0A16A' [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/imports/components/MR0A16A.v:4]
-INFO: [Synth 8-6157] synthesizing module 'core_memory' [/home/mike/rotinom/fpga/rotinom.runs/synth_1/.Xil/Vivado-28074-luminary/realtime/core_memory_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'core_memory' (18#1) [/home/mike/rotinom/fpga/rotinom.runs/synth_1/.Xil/Vivado-28074-luminary/realtime/core_memory_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'core_memory' [/home/mike/rotinom/fpga/rotinom.runs/synth_1/.Xil/Vivado-21142-luminary/realtime/core_memory_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'core_memory' (18#1) [/home/mike/rotinom/fpga/rotinom.runs/synth_1/.Xil/Vivado-21142-luminary/realtime/core_memory_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'MR0A16A' (19#1) [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/imports/components/MR0A16A.v:4]
 INFO: [Synth 8-6157] synthesizing module 'U74HC04__parameterized30' [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/imports/components/U74HC04.v:4]
 	Parameter ic1 bound to: 1'b1 
@@ -571,14 +571,13 @@ WARNING: [Synth 8-3848] Net __A21_NET_71 in module/entity fpga_agc does not have
 INFO: [Synth 8-6155] done synthesizing module 'fpga_agc' (20#1) [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/new/fpga_agc.v:4]
 INFO: [Synth 8-6157] synthesizing module 'rotinom_ps_wrapper' [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/bd/rotinom_ps/hdl/rotinom_ps_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'rotinom_ps' [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/bd/rotinom_ps/synth/rotinom_ps.v:13]
-INFO: [Synth 8-6157] synthesizing module 'rotinom_ps_processing_system7_0_0' [/home/mike/rotinom/fpga/rotinom.runs/synth_1/.Xil/Vivado-28074-luminary/realtime/rotinom_ps_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'rotinom_ps_processing_system7_0_0' (21#1) [/home/mike/rotinom/fpga/rotinom.runs/synth_1/.Xil/Vivado-28074-luminary/realtime/rotinom_ps_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'rotinom_ps_processing_system7_0_0' [/home/mike/rotinom/fpga/rotinom.runs/synth_1/.Xil/Vivado-21142-luminary/realtime/rotinom_ps_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rotinom_ps_processing_system7_0_0' (21#1) [/home/mike/rotinom/fpga/rotinom.runs/synth_1/.Xil/Vivado-21142-luminary/realtime/rotinom_ps_processing_system7_0_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'processing_system7_0' of module 'rotinom_ps_processing_system7_0_0' requires 25 connections, but only 22 given [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/bd/rotinom_ps/synth/rotinom_ps.v:79]
 INFO: [Synth 8-6155] done synthesizing module 'rotinom_ps' (22#1) [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/bd/rotinom_ps/synth/rotinom_ps.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'rotinom_ps_wrapper' (23#1) [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/bd/rotinom_ps/hdl/rotinom_ps_wrapper.v:12]
 INFO: [Synth 8-6155] done synthesizing module 'rotinom' (24#1) [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/new/rotinom.v:4]
 WARNING: [Synth 8-3917] design rotinom has port STRT1 driven by constant 0
-WARNING: [Synth 8-3917] design rotinom has port STRT2 driven by constant 0
 WARNING: [Synth 8-3917] design rotinom has port ALGA driven by constant 0
 WARNING: [Synth 8-3331] design U74HC04__parameterized3 has unconnected port gnd
 WARNING: [Synth 8-3331] design U74HC02__parameterized8 has unconnected port gnd
@@ -682,7 +681,7 @@ WARNING: [Synth 8-3331] design U74HC02__parameterized11 has unconnected port gnd
 WARNING: [Synth 8-3331] design U74HC04__parameterized19 has unconnected port gnd
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1423.574 ; gain = 73.406 ; free physical = 2357 ; free virtual = 17710
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1423.328 ; gain = 73.402 ; free physical = 1847 ; free virtual = 16930
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -796,10 +795,10 @@ INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instan
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1423.574 ; gain = 73.406 ; free physical = 2370 ; free virtual = 17723
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1423.328 ; gain = 73.402 ; free physical = 1857 ; free virtual = 16940
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1423.574 ; gain = 73.406 ; free physical = 2370 ; free virtual = 17723
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1423.328 ; gain = 73.402 ; free physical = 1857 ; free virtual = 16940
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -808,38 +807,38 @@ Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/bd/rotinom_ps/ip/rotinom_ps_processing_system7_0_0/rotinom_ps_processing_system7_0_0/rotinom_ps_processing_system7_0_0_in_context.xdc] for cell 'monitor_ps/rotinom_ps_i/processing_system7_0'
 Finished Parsing XDC File [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/bd/rotinom_ps/ip/rotinom_ps_processing_system7_0_0/rotinom_ps_processing_system7_0_0/rotinom_ps_processing_system7_0_0_in_context.xdc] for cell 'monitor_ps/rotinom_ps_i/processing_system7_0'
-Parsing XDC File [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/ip/rope_memory/rope_memory/blk_mem_gen_0_in_context.xdc] for cell 'agc/U31001/rope'
-Finished Parsing XDC File [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/ip/rope_memory/rope_memory/blk_mem_gen_0_in_context.xdc] for cell 'agc/U31001/rope'
 Parsing XDC File [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/ip/prop_clk_div/prop_clk_div/prop_clk_div_in_context.xdc] for cell 'prop_div'
 Finished Parsing XDC File [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/ip/prop_clk_div/prop_clk_div/prop_clk_div_in_context.xdc] for cell 'prop_div'
 Parsing XDC File [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/ip/core_memory/core_memory/core_memory_in_context.xdc] for cell 'agc/U31025/ram'
 Finished Parsing XDC File [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/ip/core_memory/core_memory/core_memory_in_context.xdc] for cell 'agc/U31025/ram'
+Parsing XDC File [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/ip/rope_memory/rope_memory/rope_memory_in_context.xdc] for cell 'agc/U31001/rope'
+Finished Parsing XDC File [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/ip/rope_memory/rope_memory/rope_memory_in_context.xdc] for cell 'agc/U31001/rope'
 Parsing XDC File [/home/mike/rotinom/fpga/rotinom.srcs/constrs_1/new/rotinom.xdc]
 Finished Parsing XDC File [/home/mike/rotinom/fpga/rotinom.srcs/constrs_1/new/rotinom.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/mike/rotinom/fpga/rotinom.srcs/constrs_1/new/rotinom.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/rotinom_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/rotinom_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [/home/mike/rotinom/fpga/rotinom.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [/home/mike/rotinom/fpga/rotinom.runs/synth_1/dont_touch.xdc]
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1839.691 ; gain = 0.000 ; free physical = 1903 ; free virtual = 17310
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1839.445 ; gain = 0.000 ; free physical = 1696 ; free virtual = 16734
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1839.691 ; gain = 0.000 ; free physical = 1906 ; free virtual = 17309
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1839.445 ; gain = 0.000 ; free physical = 1697 ; free virtual = 16735
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1839.691 ; gain = 0.000 ; free physical = 1906 ; free virtual = 17309
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 1839.691 ; gain = 0.000 ; free physical = 1906 ; free virtual = 17309
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1839.445 ; gain = 0.000 ; free physical = 1697 ; free virtual = 16735
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1839.445 ; gain = 0.000 ; free physical = 1697 ; free virtual = 16735
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'agc/U31001/rope' at clock pin 'clka' is different from the actual clock period '19.531', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'agc/U31025/ram' at clock pin 'clka' is different from the actual clock period '19.531', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1840.691 ; gain = 490.523 ; free physical = 2001 ; free virtual = 17430
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1840.445 ; gain = 490.520 ; free physical = 1813 ; free virtual = 16851
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1840.691 ; gain = 490.523 ; free physical = 2001 ; free virtual = 17430
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1840.445 ; gain = 490.520 ; free physical = 1813 ; free virtual = 16851
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1108,14 +1107,14 @@ Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  /home/mike
 Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  /home/mike/rotinom/fpga/rotinom.srcs/sources_1/ip/prop_clk_div/prop_clk_div/prop_clk_div_in_context.xdc, line 4).
 Applied set_property DONT_TOUCH = true for monitor_ps/rotinom_ps_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for monitor_ps/rotinom_ps_i/processing_system7_0. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for agc/U31001/rope. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for prop_div. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for agc/U31025/ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for agc/U31001/rope. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1840.691 ; gain = 490.523 ; free physical = 2001 ; free virtual = 17430
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1840.445 ; gain = 490.520 ; free physical = 1813 ; free virtual = 16851
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1840.691 ; gain = 490.523 ; free physical = 1992 ; free virtual = 17413
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1840.445 ; gain = 490.520 ; free physical = 1809 ; free virtual = 16842
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1133,10 +1132,10 @@ Detailed RTL Component Info :
 +---Registers : 
 	                6 Bit    Registers := 1     
 	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 14367 
+	                1 Bit    Registers := 14368 
 +---Muxes : 
 	   2 Input      6 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 780   
+	   2 Input      1 Bit        Muxes := 782   
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -1150,6 +1149,9 @@ Detailed RTL Component Info :
 	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
 	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
 Module agc_clk_div 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -1235,7 +1237,6 @@ INFO: [Synth 8-4471] merging register 'U23018/D/next_val_reg' into 'U23018/A/nex
 INFO: [Synth 8-4471] merging register 'U23018/D/y_reg' into 'U23018/A/y_reg' [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/imports/components/nor_1.v:14]
 INFO: [Synth 8-4471] merging register 'U24036/C/next_val_reg' into 'U24036/B/next_val_reg' [/home/mike/rotinom/fpga/rotinom.srcs/sources_1/imports/components/nor_1.v:20]
 WARNING: [Synth 8-3917] design rotinom has port STRT1 driven by constant 0
-WARNING: [Synth 8-3917] design rotinom has port STRT2 driven by constant 0
 WARNING: [Synth 8-3917] design rotinom has port ALGA driven by constant 0
 INFO: [Synth 8-3886] merging instance 'agc/U18050/E/next_val_reg' (FDC_1) to 'agc/U18050/F/next_val_reg'
 INFO: [Synth 8-3886] merging instance 'agc/U18050/D/next_val_reg' (FDC_1) to 'agc/U18050/F/next_val_reg'
@@ -1283,9 +1284,9 @@ INFO: [Synth 8-3886] merging instance 'agc/U19018/B/next_val_reg' (FDP_1) to 'ag
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (agc/\U19018/A/next_val_reg )
 INFO: [Synth 8-3886] merging instance 'agc/U19018/B/y_reg' (FDP) to 'agc/U19018/A/y_reg'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (agc/\U22001/C/next_val_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\agc_div/counter_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\agc_div/counter_reg[5] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:28 ; elapsed = 00:02:34 . Memory (MB): peak = 1936.309 ; gain = 586.141 ; free physical = 1791 ; free virtual = 17265
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:35 ; elapsed = 00:04:45 . Memory (MB): peak = 1937.070 ; gain = 587.145 ; free physical = 1576 ; free virtual = 16574
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1300,13 +1301,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'monitor_ps/rotinom_ps_i/p
 INFO: [Synth 8-5578] Moved timing constraint from pin 'prop_div/clk_out1' to pin 'prop_div/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:33 ; elapsed = 00:02:39 . Memory (MB): peak = 1936.309 ; gain = 586.141 ; free physical = 1730 ; free virtual = 17171
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:42 ; elapsed = 00:04:52 . Memory (MB): peak = 1937.070 ; gain = 587.145 ; free physical = 1480 ; free virtual = 16479
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:37 ; elapsed = 00:02:43 . Memory (MB): peak = 1936.309 ; gain = 586.141 ; free physical = 1714 ; free virtual = 17157
+Finished Timing Optimization : Time (s): cpu = 00:04:47 ; elapsed = 00:04:57 . Memory (MB): peak = 1937.070 ; gain = 587.145 ; free physical = 1472 ; free virtual = 16470
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1318,7 +1319,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:43 ; elapsed = 00:02:49 . Memory (MB): peak = 1936.309 ; gain = 586.141 ; free physical = 1737 ; free virtual = 17169
+Finished Technology Mapping : Time (s): cpu = 00:04:54 ; elapsed = 00:05:05 . Memory (MB): peak = 1937.070 ; gain = 587.145 ; free physical = 1480 ; free virtual = 16478
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1342,7 +1343,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:45 ; elapsed = 00:02:51 . Memory (MB): peak = 1936.309 ; gain = 586.141 ; free physical = 1736 ; free virtual = 17168
+Finished IO Insertion : Time (s): cpu = 00:04:58 ; elapsed = 00:05:08 . Memory (MB): peak = 1937.070 ; gain = 587.145 ; free physical = 1479 ; free virtual = 16477
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1355,7 +1356,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:45 ; elapsed = 00:02:51 . Memory (MB): peak = 1936.309 ; gain = 586.141 ; free physical = 1736 ; free virtual = 17168
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:58 ; elapsed = 00:05:08 . Memory (MB): peak = 1937.070 ; gain = 587.145 ; free physical = 1479 ; free virtual = 16477
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1367,25 +1368,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:46 ; elapsed = 00:02:53 . Memory (MB): peak = 1936.309 ; gain = 586.141 ; free physical = 1736 ; free virtual = 17167
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:00 ; elapsed = 00:05:10 . Memory (MB): peak = 1937.070 ; gain = 587.145 ; free physical = 1479 ; free virtual = 16477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:46 ; elapsed = 00:02:53 . Memory (MB): peak = 1936.309 ; gain = 586.141 ; free physical = 1736 ; free virtual = 17167
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:00 ; elapsed = 00:05:10 . Memory (MB): peak = 1937.070 ; gain = 587.145 ; free physical = 1479 ; free virtual = 16477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:47 ; elapsed = 00:02:53 . Memory (MB): peak = 1936.309 ; gain = 586.141 ; free physical = 1736 ; free virtual = 17168
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:01 ; elapsed = 00:05:12 . Memory (MB): peak = 1937.070 ; gain = 587.145 ; free physical = 1479 ; free virtual = 16477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:47 ; elapsed = 00:02:54 . Memory (MB): peak = 1936.309 ; gain = 586.141 ; free physical = 1736 ; free virtual = 17168
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:01 ; elapsed = 00:05:12 . Memory (MB): peak = 1937.070 ; gain = 587.145 ; free physical = 1479 ; free virtual = 16477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1409,26 +1410,27 @@ Report Cell Usage:
 |2     |prop_clk_div                      |     1|
 |3     |rope_memory                       |     1|
 |4     |rotinom_ps_processing_system7_0_0 |     1|
-|5     |LUT1                              |   742|
-|6     |LUT2                              |  1180|
-|7     |LUT3                              |   117|
-|8     |LUT4                              |  2314|
-|9     |LUT5                              |  1105|
-|10    |LUT6                              |   190|
-|11    |FDCE                              | 10039|
-|12    |FDPE                              |  2321|
-|13    |FDRE                              |     3|
-|14    |IBUF                              |    31|
-|15    |OBUF                              |     3|
-|16    |OBUFT                             |    81|
+|5     |CARRY4                            |     5|
+|6     |LUT1                              |   744|
+|7     |LUT2                              |  1200|
+|8     |LUT3                              |   109|
+|9     |LUT4                              |  2321|
+|10    |LUT5                              |  1106|
+|11    |LUT6                              |   192|
+|12    |FDCE                              | 10059|
+|13    |FDPE                              |  2321|
+|14    |FDRE                              |     3|
+|15    |IBUF                              |    37|
+|16    |OBUF                              |     3|
+|17    |OBUFT                             |    81|
 +------+----------------------------------+------+
 
 Report Instance Areas: 
 +------+-----------------+-------------------------------+------+
 |      |Instance         |Module                         |Cells |
 +------+-----------------+-------------------------------+------+
-|1     |top              |                               | 18163|
-|2     |  agc            |fpga_agc                       | 18021|
+|1     |top              |                               | 18218|
+|2     |  agc            |fpga_agc                       | 18022|
 |3     |    U10001       |U74HC02__parameterized0        |    17|
 |4     |      A          |nor_2__parameterized0_5514     |     4|
 |5     |      B          |nor_2__parameterized0_5515     |     4|
@@ -1747,9 +1749,9 @@ Report Instance Areas:
 |318   |      D          |nor_2__parameterized0_5274     |     4|
 |319   |    U1101        |U74HC02                        |    17|
 |320   |      A          |nor_2_5267                     |     4|
-|321   |      B          |nor_2__parameterized0_5268     |     5|
+|321   |      B          |nor_2__parameterized0_5268     |     4|
 |322   |      C          |nor_2__parameterized0_5269     |     4|
-|323   |      D          |nor_2_5270                     |     4|
+|323   |      D          |nor_2_5270                     |     5|
 |324   |    U11010       |U74HC02__parameterized4_59     |    16|
 |325   |      A          |nor_2__parameterized0_5263     |     4|
 |326   |      B          |nor_2__parameterized0_5264     |     4|
@@ -2012,20 +2014,20 @@ Report Instance Areas:
 |583   |      A          |nor_3_5064                     |     4|
 |584   |      B          |nor_3_5065                     |     4|
 |585   |      C          |nor_3_5066                     |     4|
-|586   |    U1108        |U74HC02_118                    |    18|
+|586   |    U1108        |U74HC02_118                    |    19|
 |587   |      A          |nor_2_5060                     |     4|
 |588   |      B          |nor_2__parameterized0_5061     |     5|
 |589   |      C          |nor_2__parameterized0_5062     |     4|
-|590   |      D          |nor_2_5063                     |     5|
+|590   |      D          |nor_2_5063                     |     6|
 |591   |    U1109        |U74HC27_119                    |    12|
 |592   |      A          |nor_3_5057                     |     4|
 |593   |      B          |nor_3_5058                     |     4|
 |594   |      C          |nor_3_5059                     |     4|
-|595   |    U1110        |U74HC02_120                    |    19|
+|595   |    U1110        |U74HC02_120                    |    18|
 |596   |      A          |nor_2_5053                     |     4|
 |597   |      B          |nor_2__parameterized0_5054     |     5|
 |598   |      C          |nor_2__parameterized0_5055     |     4|
-|599   |      D          |nor_2_5056                     |     6|
+|599   |      D          |nor_2_5056                     |     5|
 |600   |    U1111        |U74HC02_121                    |    18|
 |601   |      A          |nor_2_5049                     |     4|
 |602   |      B          |nor_2__parameterized0_5050     |     5|
@@ -2049,11 +2051,11 @@ Report Instance Areas:
 |620   |      B          |nor_2__parameterized0_5036     |     5|
 |621   |      C          |nor_2__parameterized0_5037     |     4|
 |622   |      D          |nor_2_5038                     |     4|
-|623   |    U1116        |U74HC02_126                    |    17|
+|623   |    U1116        |U74HC02_126                    |    16|
 |624   |      A          |nor_2_5031                     |     4|
 |625   |      B          |nor_2__parameterized0_5032     |     4|
 |626   |      C          |nor_2__parameterized0_5033     |     4|
-|627   |      D          |nor_2_5034                     |     5|
+|627   |      D          |nor_2_5034                     |     4|
 |628   |    U1117        |U74HC27_127                    |    12|
 |629   |      A          |nor_3_5028                     |     4|
 |630   |      B          |nor_3_5029                     |     4|
@@ -2072,11 +2074,11 @@ Report Instance Areas:
 |643   |      B          |nor_2__parameterized0_5018     |     4|
 |644   |      C          |nor_2__parameterized0_5019     |     4|
 |645   |      D          |nor_2_5020                     |     5|
-|646   |    U1121        |U74HC02_131                    |    16|
+|646   |    U1121        |U74HC02_131                    |    17|
 |647   |      A          |nor_2_5013                     |     4|
 |648   |      B          |nor_2__parameterized0_5014     |     4|
 |649   |      C          |nor_2__parameterized0_5015     |     4|
-|650   |      D          |nor_2_5016                     |     4|
+|650   |      D          |nor_2_5016                     |     5|
 |651   |    U1122        |U74HC27_132                    |    12|
 |652   |      A          |nor_3_5010                     |     4|
 |653   |      B          |nor_3_5011                     |     4|
@@ -2116,16 +2118,16 @@ Report Instance Areas:
 |687   |      B          |nor_2__parameterized0_4984     |     4|
 |688   |      C          |nor_2__parameterized0_4985     |     4|
 |689   |      D          |nor_2__parameterized0_4986     |     4|
-|690   |    U1131        |U74HC02__parameterized0_141    |    17|
+|690   |    U1131        |U74HC02__parameterized0_141    |    16|
 |691   |      A          |nor_2__parameterized0_4979     |     4|
 |692   |      B          |nor_2__parameterized0_4980     |     4|
 |693   |      C          |nor_2__parameterized0_4981     |     4|
-|694   |      D          |nor_2__parameterized0_4982     |     5|
-|695   |    U1132        |U74HC02_142                    |    19|
+|694   |      D          |nor_2__parameterized0_4982     |     4|
+|695   |    U1132        |U74HC02_142                    |    18|
 |696   |      A          |nor_2_4975                     |     5|
 |697   |      B          |nor_2__parameterized0_4976     |     5|
 |698   |      C          |nor_2__parameterized0_4977     |     4|
-|699   |      D          |nor_2_4978                     |     5|
+|699   |      D          |nor_2_4978                     |     4|
 |700   |    U1133        |U74HC27_143                    |    12|
 |701   |      A          |nor_3_4972                     |     4|
 |702   |      B          |nor_3_4973                     |     4|
@@ -2181,10 +2183,10 @@ Report Instance Areas:
 |752   |      B          |nor_2__parameterized0_4933     |     4|
 |753   |      C          |nor_2__parameterized0_4934     |     4|
 |754   |      D          |nor_2_4935                     |     4|
-|755   |    U1145        |U74HC27_155                    |    12|
+|755   |    U1145        |U74HC27_155                    |    13|
 |756   |      A          |nor_3_4929                     |     4|
 |757   |      B          |nor_3_4930                     |     4|
-|758   |      C          |nor_3_4931                     |     4|
+|758   |      C          |nor_3_4931                     |     5|
 |759   |    U1146        |U74HC02_156                    |    16|
 |760   |      A          |nor_2_4925                     |     4|
 |761   |      B          |nor_2__parameterized0_4926     |     4|
@@ -2213,11 +2215,11 @@ Report Instance Areas:
 |784   |      B          |nor_2__parameterized0_4908     |     4|
 |785   |      C          |nor_2__parameterized0_4909     |     4|
 |786   |      D          |nor_2_4910                     |     4|
-|787   |    U1152        |U74HC02_162                    |    17|
+|787   |    U1152        |U74HC02_162                    |    16|
 |788   |      A          |nor_2_4903                     |     4|
 |789   |      B          |nor_2__parameterized0_4904     |     4|
 |790   |      C          |nor_2__parameterized0_4905     |     4|
-|791   |      D          |nor_2_4906                     |     5|
+|791   |      D          |nor_2_4906                     |     4|
 |792   |    U1153        |U74HC27_163                    |    12|
 |793   |      A          |nor_3_4900                     |     4|
 |794   |      B          |nor_3_4901                     |     4|
@@ -2231,11 +2233,11 @@ Report Instance Areas:
 |802   |      A          |nor_3_4893                     |     4|
 |803   |      B          |nor_3_4894                     |     4|
 |804   |      C          |nor_3_4895                     |     4|
-|805   |    U1156        |U74HC02_166                    |    16|
+|805   |    U1156        |U74HC02_166                    |    17|
 |806   |      A          |nor_2_4889                     |     4|
 |807   |      B          |nor_2__parameterized0_4890     |     4|
 |808   |      C          |nor_2__parameterized0_4891     |     4|
-|809   |      D          |nor_2_4892                     |     4|
+|809   |      D          |nor_2_4892                     |     5|
 |810   |    U1157        |U74HC02_167                    |    16|
 |811   |      A          |nor_2_4885                     |     4|
 |812   |      B          |nor_2__parameterized0_4886     |     4|
@@ -2249,11 +2251,11 @@ Report Instance Areas:
 |820   |      B          |nor_2__parameterized0_4880     |     4|
 |821   |      C          |nor_2__parameterized0_4881     |     4|
 |822   |      D          |nor_2__parameterized0_4882     |     4|
-|823   |    U1160        |U74HC02__parameterized0_170    |    16|
+|823   |    U1160        |U74HC02__parameterized0_170    |    17|
 |824   |      A          |nor_2__parameterized0_4875     |     4|
 |825   |      B          |nor_2__parameterized0_4876     |     4|
 |826   |      C          |nor_2__parameterized0_4877     |     4|
-|827   |      D          |nor_2__parameterized0_4878     |     4|
+|827   |      D          |nor_2__parameterized0_4878     |     5|
 |828   |    U1161        |U74HC02__parameterized0_171    |    16|
 |829   |      A          |nor_2__parameterized0_4871     |     4|
 |830   |      B          |nor_2__parameterized0_4872     |     4|
@@ -2539,9 +2541,9 @@ Report Instance Areas:
 |1110  |      B          |nor_2_4651                     |     4|
 |1111  |      C          |nor_2__parameterized0_4652     |     4|
 |1112  |      D          |nor_2__parameterized0_4653     |     5|
-|1113  |    U13011       |U74HC4002__parameterized2_225  |     9|
+|1113  |    U13011       |U74HC4002__parameterized2_225  |     8|
 |1114  |      A          |nor_4__parameterized0_4648     |     4|
-|1115  |      B          |nor_4__parameterized0_4649     |     5|
+|1115  |      B          |nor_4__parameterized0_4649     |     4|
 |1116  |    U13012       |U74HC02__parameterized5_226    |    16|
 |1117  |      A          |nor_2_4644                     |     4|
 |1118  |      B          |nor_2__parameterized0_4645     |     4|
@@ -2564,9 +2566,9 @@ Report Instance Areas:
 |1135  |      A          |nor_3_4631                     |     4|
 |1136  |      B          |nor_3_4632                     |     3|
 |1137  |      C          |nor_3_4633                     |     3|
-|1138  |    U13031       |U74HC02__parameterized11       |    18|
+|1138  |    U13031       |U74HC02__parameterized11       |    19|
 |1139  |      A          |nor_2__parameterized0_4627     |     6|
-|1140  |      B          |nor_2_4628                     |     4|
+|1140  |      B          |nor_2_4628                     |     5|
 |1141  |      C          |nor_2_4629                     |     4|
 |1142  |      D          |nor_2_4630                     |     4|
 |1143  |    U13032       |U74HC04_231                    |    13|
@@ -3856,8 +3858,8 @@ Report Instance Areas:
 |2427  |      B          |nor_2_3626                     |     4|
 |2428  |      C          |nor_2__parameterized0_3627     |     4|
 |2429  |      D          |nor_2__parameterized0_3628     |     4|
-|2430  |    U18122       |U74HC02__parameterized9_503    |    17|
-|2431  |      A          |nor_2_3621                     |     5|
+|2430  |    U18122       |U74HC02__parameterized9_503    |    16|
+|2431  |      A          |nor_2_3621                     |     4|
 |2432  |      B          |nor_2__parameterized0_3622     |     4|
 |2433  |      C          |nor_2_3623                     |     4|
 |2434  |      D          |nor_2__parameterized0_3624     |     4|
@@ -4404,11 +4406,11 @@ Report Instance Areas:
 |2975  |      D          |nor_1_3209                     |     2|
 |2976  |    U2043        |U74HC4002_626                  |     4|
 |2977  |      A          |nor_4_3205                     |     4|
-|2978  |    U2044        |U74HC02__parameterized0_627    |    17|
+|2978  |    U2044        |U74HC02__parameterized0_627    |    18|
 |2979  |      A          |nor_2__parameterized0_3201     |     4|
 |2980  |      B          |nor_2__parameterized0_3202     |     4|
 |2981  |      C          |nor_2__parameterized0_3203     |     4|
-|2982  |      D          |nor_2__parameterized0_3204     |     5|
+|2982  |      D          |nor_2__parameterized0_3204     |     6|
 |2983  |    U21001       |U74HC4002_628                  |     9|
 |2984  |      A          |nor_4_3199                     |     4|
 |2985  |      B          |nor_4_3200                     |     5|
@@ -4668,10 +4670,10 @@ Report Instance Areas:
 |3239  |    U21059       |U74HC04_682                    |     4|
 |3240  |      A          |nor_1_3000                     |     2|
 |3241  |      B          |nor_1_3001                     |     2|
-|3242  |    U2106        |U74HC02__parameterized1_683    |    18|
+|3242  |    U2106        |U74HC02__parameterized1_683    |    19|
 |3243  |      A          |nor_2__parameterized0_2996     |     5|
 |3244  |      B          |nor_2_2997                     |     4|
-|3245  |      C          |nor_2__parameterized0_2998     |     4|
+|3245  |      C          |nor_2__parameterized0_2998     |     5|
 |3246  |      D          |nor_2__parameterized0_2999     |     5|
 |3247  |    U2107        |U74HC27__parameterized0_684    |    12|
 |3248  |      A          |nor_3_2993                     |     4|
@@ -4684,8 +4686,8 @@ Report Instance Areas:
 |3255  |      D          |nor_1_2990                     |     3|
 |3256  |      E          |nor_1_2991                     |     2|
 |3257  |      F          |nor_1_2992                     |     3|
-|3258  |    U2109        |U74HC02__parameterized2_685    |    19|
-|3259  |      A          |nor_2__parameterized0_2983     |     5|
+|3258  |    U2109        |U74HC02__parameterized2_685    |    18|
+|3259  |      A          |nor_2__parameterized0_2983     |     4|
 |3260  |      B          |nor_2__parameterized0_2984     |     5|
 |3261  |      C          |nor_2__parameterized0_2985     |     4|
 |3262  |      D          |nor_2_2986                     |     5|
@@ -4713,9 +4715,9 @@ Report Instance Areas:
 |3284  |      D          |nor_2__parameterized0_2969     |     4|
 |3285  |    U2115        |U74HC02__parameterized1_691    |    18|
 |3286  |      A          |nor_2__parameterized0_2962     |     4|
-|3287  |      B          |nor_2_2963                     |     6|
+|3287  |      B          |nor_2_2963                     |     5|
 |3288  |      C          |nor_2__parameterized0_2964     |     4|
-|3289  |      D          |nor_2__parameterized0_2965     |     4|
+|3289  |      D          |nor_2__parameterized0_2965     |     5|
 |3290  |    U2116        |U74HC02__parameterized1_692    |    15|
 |3291  |      A          |nor_2__parameterized0_2958     |     4|
 |3292  |      B          |nor_2_2959                     |     4|
@@ -4738,9 +4740,9 @@ Report Instance Areas:
 |3309  |      B          |nor_1_2946                     |     2|
 |3310  |      C          |nor_1__parameterized0_2947     |     2|
 |3311  |      E          |nor_1__parameterized0_2948     |     4|
-|3312  |    U2122        |U74HC02__parameterized0_695    |    21|
+|3312  |    U2122        |U74HC02__parameterized0_695    |    22|
 |3313  |      A          |nor_2__parameterized0_2941     |     4|
-|3314  |      B          |nor_2__parameterized0_2942     |     7|
+|3314  |      B          |nor_2__parameterized0_2942     |     8|
 |3315  |      C          |nor_2__parameterized0_2943     |     5|
 |3316  |      D          |nor_2__parameterized0_2944     |     5|
 |3317  |    U2123        |U74HC02__parameterized3_696    |    16|
@@ -7018,30 +7020,33 @@ Report Instance Areas:
 |5589  |    U9067        |U74HC4002_1174                 |     7|
 |5590  |      A          |nor_4                          |     4|
 |5591  |      B          |nor_4_1175                     |     3|
-|5592  |  agc_div        |agc_clk_div                    |    11|
+|5592  |  agc_div        |agc_clk_div                    |    12|
 |5593  |  monitor_ps     |rotinom_ps_wrapper             |     3|
 |5594  |    rotinom_ps_i |rotinom_ps                     |     3|
 +------+-----------------+-------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:47 ; elapsed = 00:02:54 . Memory (MB): peak = 1936.309 ; gain = 586.141 ; free physical = 1735 ; free virtual = 17168
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:01 ; elapsed = 00:05:12 . Memory (MB): peak = 1937.070 ; gain = 587.145 ; free physical = 1478 ; free virtual = 16478
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:39 ; elapsed = 00:02:46 . Memory (MB): peak = 1936.309 ; gain = 169.023 ; free physical = 1786 ; free virtual = 17219
-Synthesis Optimization Complete : Time (s): cpu = 00:02:48 ; elapsed = 00:02:54 . Memory (MB): peak = 1936.316 ; gain = 586.141 ; free physical = 1789 ; free virtual = 17222
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:49 ; elapsed = 00:05:00 . Memory (MB): peak = 1937.070 ; gain = 170.027 ; free physical = 1530 ; free virtual = 16530
+Synthesis Optimization Complete : Time (s): cpu = 00:05:02 ; elapsed = 00:05:12 . Memory (MB): peak = 1937.078 ; gain = 587.145 ; free physical = 1541 ; free virtual = 16540
 INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1968.324 ; gain = 0.000 ; free physical = 1744 ; free virtual = 17176
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1969.086 ; gain = 0.000 ; free physical = 1487 ; free virtual = 16486
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-259 Infos, 210 Warnings, 0 Critical Warnings and 0 Errors encountered.
+261 Infos, 208 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:52 ; elapsed = 00:02:57 . Memory (MB): peak = 1968.324 ; gain = 618.500 ; free physical = 1822 ; free virtual = 17254
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1968.324 ; gain = 0.000 ; free physical = 1822 ; free virtual = 17254
+synth_design: Time (s): cpu = 00:05:07 ; elapsed = 00:05:17 . Memory (MB): peak = 1969.086 ; gain = 619.508 ; free physical = 1564 ; free virtual = 16564
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1969.086 ; gain = 0.000 ; free physical = 1564 ; free virtual = 16564
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/mike/rotinom/fpga/rotinom.runs/synth_1/rotinom.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1993.098 ; gain = 24.012 ; free physical = 1561 ; free virtual = 16563
 INFO: [runtcl-4] Executing : report_utilization -file rotinom_utilization_synth.rpt -pb rotinom_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Apr  4 23:41:30 2019...
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 29 19:13:51 2019...

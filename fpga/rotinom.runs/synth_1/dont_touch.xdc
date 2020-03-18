@@ -9,7 +9,4 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==rotinom_ps || O
 # IP: bd/rotinom_ps/ip/rotinom_ps_processing_system7_0_0/rotinom_ps_processing_system7_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==rotinom_ps_processing_system7_0_0 || ORIG_REF_NAME==rotinom_ps_processing_system7_0_0} -quiet] -quiet
 
-# IP: ip/rope_memory/rope_memory.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==rope_memory || ORIG_REF_NAME==rope_memory} -quiet] -quiet
-
 # XDC: bd/rotinom_ps/rotinom_ps_ooc.xdc
